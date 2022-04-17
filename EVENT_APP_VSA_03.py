@@ -10,6 +10,8 @@ from filterFirst import FilterFirst
 from filterSupplyDemandZone import FilterDailySupplyDemandZone
 from filterPriceSpread import FilterPriceSpread
 from filterAbcdPattern import FilterAbcdPattern
+from filterPivotPoint import FilterPivotPoint
+
 class EventBarDataProcess:
 
     def __init__(self, pubKeyStack=None, pubTrade=None):
@@ -21,6 +23,8 @@ class EventBarDataProcess:
         self.filter = FilterFirst()
         self.sdz = FilterDailySupplyDemandZone()
         self.abcd = FilterAbcdPattern()
+        self.pivot = FilterPivotPoint()
+        self.cs = FilterCandlePattern()
 
     def Run(self, data):
         try:
@@ -33,14 +37,18 @@ class EventBarDataProcess:
                 return
             app1 = volumeSpreadAnalysis()
             vsa = app1.Run(symbol, df)
-            app2 = FilterCandlePattern()
-            candlestickparttern = app2.Run(symbol, df)
             close = df.iloc[0]['Close']
             supplyDemandZone = False
             if FilterPriceSpread.IsEnoughSpread(df):
                 supplyDemandZone = self.sdz.Run(symbol, df, close)
+                # 1 and 2 for enguling and morning/evening star
+                candlestickparttern = self.cs.Run(symbol, df)
+                # 4 for ABCD pattern
                 if self.abcd.Run(symbol, df, close):
                     candlestickparttern += 4
+                # 8 for Pivot Point pattern
+                if self.pivot.Run(symbol, df, close):
+                    candlestickparttern += 8
             self.publisher.publish({
                 'datatype': 'VSA', 
                 'symbol': symbol, 

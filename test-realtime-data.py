@@ -3,10 +3,8 @@ import sys
 import json
 from datetime import datetime
 import time
-from redisHash import ActiveBars
 from redisTimeseriesData import RealTimeBars
 from RedisTimeseriesTable import TimeseriesTable
-from redis3barScore import StudyThreeBarsScore
 from redisPubsub import RedisPublisher
 from pubsubKeys import PUBSUB_KEYS
 from redisUtil import SetInterval
@@ -92,8 +90,6 @@ def getNext5MinBar(symbol):
 
 
 rtb: RealTimeBars = RealTimeBars()
-ab: ActiveBars = ActiveBars()
-process = StudyThreeBarsScore()
 
 
 publisherTrade: RedisPublisher = RedisPublisher(PUBSUB_KEYS.EVENT_TRADE_NEW)
@@ -168,4 +164,4 @@ if __name__ == '__main__':
 
     print('starting 1 minute data cycle.')
     SetInterval(60, lambda: MinInterval(symbol, period))
-    SetInterval(5, lambda: TradeBar(symbol))
+#    SetInterval(5, lambda: TradeBar(symbol))

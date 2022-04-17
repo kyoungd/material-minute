@@ -5,7 +5,7 @@ class FilterPriceSpread:
     minMaxNearPercent = 0.04
 
     @staticmethod
-    def slope(self, x1: int, y1: float, x2: int, y2: float, x: int) -> float:
+    def slope(x1: int, y1: float, x2: int, y2: float, x: int) -> float:
         if x < x1:
             return y1
         if x > x2:
@@ -21,22 +21,14 @@ class FilterPriceSpread:
         iMin = df['Low'].idxmin()
         high = df.iloc[iMax]['High']
         low = df.iloc[iMin]['Low']
-        pt1 = [iMax, high]
-        pt2 = [iMin, low]
-        firstPt = pt1 if pt1[0] < pt2[0] else pt2
-        secondPt = pt2 if pt1[0] < pt2[0] else pt1
-        if firstPt[0] >= 2:
-            rangeDelta = FilterPriceSpread.slope(
-                3, spread, 200, spread / 3, firstPt[1])
-            if (high - low) >= rangeDelta:
-                return True
-        return False
+        return FilterPriceSpread.IsPriceSpread(high, low, spread)
 
     @staticmethod
     def IsPriceSpread(price1: float, price2: float, spread: float = None) -> bool:
-        spread = FilterPriceSpread.minMaxRangePercent if spread is None else spread
+        highRange = FilterPriceSpread.minMaxRangePercent if spread is None else spread
+        lowRange = highRange / 3
         spreadPrice = FilterPriceSpread.slope(
-            3, spread, 200, spread / 3, price1)
+            3, highRange, 200, lowRange, price1)
         if abs(price1 - price2) <= spreadPrice:
             return True
         return False
@@ -46,6 +38,6 @@ class FilterPriceSpread:
         spread = FilterPriceSpread.minMaxNearPercent if spread is None else spread
         priceDelta = FilterPriceSpread.slope(3, spread,
                             200, spread / 3, close2)
-        if abs(close1) <= abs(priceDelta):
+        if abs(close2 - close1) <= abs(priceDelta):
             return True
         return False

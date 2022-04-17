@@ -20,15 +20,19 @@ class LoadPivotPoints:
         self.hash = PivotPointStack()
 
     def AddPivotPoint(self, block):
-        symbol = block["symbol"]
-        rows = block["data"]
-        pp = (rows[0]['h'] + rows[0]['l'] + rows[0]['c']) / 3
-        r1 = 2 * pp - rows[0]['l']
-        s1 = 2 * pp - rows[0]['h']
-        data = { "pp": pp, "r1": r1, "s1": s1 }
-        self.hash.Add(symbol, data)
+        try:
+            symbol = block[0]
+            latest = block[1][0]
+            pp = (latest['h'] + latest['l'] + latest['c']) / 3
+            r1 = 2 * pp - latest['l']
+            s1 = 2 * pp - latest['h']
+            data = { "pp": pp, "r1": r1, "s1": s1 }
+            self.hash.Add(symbol, data)
+        except Exception as ex:
+            logging.error(f'LoadPivotPoints.AddPivotPoint {symbol} - {ex}')
 
-    def readFromDb(self, func)
+
+    def readFromDb(self, func):
         db = DB()
         query = """SELECT symbol, data FROM public.market_data WHERE timeframe='1Day' AND NOT is_deleted"""
         isOk, results = db.SelectQuery(query, ())
@@ -56,47 +60,27 @@ class FilterPivotPoint:
 
     def Run(self, symbol: str, dataf: pd.DataFrame, close: float) -> bool:
         try:
-            dataf = dataf[dataf['DateTime'] > self.marketOpenAt]
+            dataf = dataf[dataf['Date'] > self.marketOpenAt]
             # less than 15 minutes into the market.  too early.
             if len(dataf) < 3:
                 return False
             pivot = self.hash.Get(symbol)
+            if pivot is None:
+                return False
             highest = dataf['High'].loc[dataf['High'].idxmax()]
             lowest = dataf['Low'].loc[dataf['Low'].idxmin()]      # Minimum in column
-            # if the stock crosses the pivot.  It already crossed.
-            if highest > pivot['pp'] > lowest:
+            # if the stock crosses the pivot, return false
+            if highest >= pivot['pp'] >= lowest:
                 return False
             # if spread is not enough
-            if FilterPriceSpread.IsEnoughSpread(highest, lowest, )
-
-            firstPt = dataf.iloc[len(dataf) - 1]
-            
-            bars = dataf[::-1]
-
-            firstPt = bars[0]
-            lastPt = bars[len(bars)-1]
-            if FilterPriceSpread.IsNearPrice(lastPt[0]['Low'], pivot['pp'], self.getPivotPointSpread(pivot['pp'])):
-            if FilterPriceSpread.IsNearPrice(firstPt[0]['High'], pivot['pp'], self.getPivotPointSpread(pivot['pp'])):
-                pass
-            elif FilterPriceSpread.IsNearPrice(firstPt[0]['Low'], pivot['pp'], self.getPivotPointSpread(pivot['pp'])):
-                pass
-            else
+            if not FilterPriceSpread.IsPriceSpread(highest, lowest, 0.05):
                 return False
-            df = self.fMinmax.Run(dataf)
-            if len(df) <= 1:
+            # if last point:
+            latestPrice = dataf.iloc[len(dataf)-1]['Close']
+            if not FilterPriceSpread.IsPriceSpread(latestPrice, pivot['pp'], 0.03):
                 return False
-            if len(df) == 1:
-                pass
-            if len(df) == 3:
-                pass
-            if len(df) == 5:
-                pass
-            return False
-            high = df['High'].loc[df['High'].idxmax()]
-            low = df['Low'].loc[df['Low'].idxmin()]
-            if FilterPriceSpread.IsNearPrice(high, close):
-                return True
-            if FilterPriceSpread.IsNearPrice(low, close):
+            isOk, peaks = self.fMinmax.Run(dataf[::-1])
+            if len(peaks) % 2 == 1:
                 return True
             return False
         except Exception as ex:

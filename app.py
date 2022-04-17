@@ -10,6 +10,7 @@ from EVENT_APP_VSA_03 import EventBarDataProcess
 from EVENT_BAR_STACK_ADD_04 import RedisStack
 from EVENT_BAR_POST_TO_SERVER_99 import EventBarPostToServer
 from redisUtil import SetInterval
+from filterPivotPoint import LoadPivotPoints
 
 def ThreadRun():
     # multi threading class
@@ -22,6 +23,9 @@ def ThreadRun():
         time.sleep(1)
 
 def RealtimeApp():
+    preprocessing = LoadPivotPoints()
+    preprocessing.Run()
+    
     p01 = Process(target=RealTimeData)
     p01.start()
     p02 = Process(target=ThreadRun)
