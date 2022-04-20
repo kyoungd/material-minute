@@ -11,20 +11,20 @@ class FilterAbcdPattern:
         self.fMinmax = TightMinMax(tightMinMaxN=4)
         self.isFirstMin = None
  
-    def IsAbcdPattern(self, pt0:float, pt1: float, pt2: float, close) -> bool:
-        if (pt2 > pt0 > pt1) or (pt2 < pt0 < pt1):
-            if FilterPriceSpread.IsNearPrice(pt0, close):
+    def IsAbcdPattern(self, A:float, B: float, C: float, close) -> bool:
+        if (B > C > A) or (B < C < A):
+            if FilterPriceSpread.IsNearPrice(B, close):
                 return True
         return False
 
     def Run(self, symbol:str, dataf: pd.DataFrame, close: float) -> bool:
         try:
-            df = self.fMinmax.Run(dataf)
-            if len(df) >= 3 and self.IsAbcdPattern(self, df[0]['Close'], df[1]['Close'], df[2]['Close'], close):
+            isFirstMin, df = self.fMinmax.Run(dataf)
+            if len(df) >= 3 and self.IsAbcdPattern(df.iloc[0][1], df.iloc[1][1], df.iloc[2][1], close):
                 return True
-            if len(df) >= 5 and self.IsAbcdPattern(self, df[0]['Close'], df[1]['Close'], df[4]['Close'], close):
+            if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0][1], df.iloc[1][1], df.iloc[4][1], close):
                 return True
-            if len(df) >= 5 and self.IsAbcdPattern(self, df[0]['Close'], df[3]['Close'], df[4]['Close'], close):
+            if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0][1], df.iloc[3][1], df.iloc[4][1], close):
                 return True
             return False
         except Exception as ex:

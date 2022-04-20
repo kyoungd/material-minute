@@ -14,7 +14,7 @@ class EventBarPostToServer:
     def PushToServer(self, content, dest=None):
         print('start push. current date:')
         print(datetime.now())
-        x = filter(lambda x: x['vsa'] > 0 or x['cs'] > 0 or x['sd'], content)
+        x = filter(lambda x: x['vsa'] > 0 or x['cs'] > 0, content)
         try:
             url = EnvFile.Get(
                 'PUSH_REALTIME_URL', 'https://simp-admin.herokuapp.com/api/realtimes?datatype=VSA&timeframe=15Min') if dest is None else dest
@@ -30,9 +30,12 @@ class EventBarPostToServer:
                 logging.info(f"PushToServer. Status Code: 0")
                 print(f"PushToServer Status Code: 0")
             # write content to file
-            with open('./post_to_server.json', 'w') as f:
+            with open('./post_to_server.txt', 'a') as f:
                 fdata = json.dumps(data)
+                f.write(datetime.now().strftime("%I:%M%p on %B %d, %Y"))
+                f.write('\n')
                 f.write(fdata)
+                f.write('\n')
         except Exception as e:
             logging.error(f"PushToServer. Exception: {e}")
             print(f"PushToServer. Exception: {e}")

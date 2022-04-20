@@ -5,13 +5,11 @@ class FilterPriceSpread:
     minMaxNearPercent = 0.04
 
     @staticmethod
-    def slope(x1: int, y1: float, x2: int, y2: float, x: int) -> float:
-        if x < x1:
+    def slope(x1: float, y1: float, x2: float, y2: float, x: float) -> float:
+        if x1 - x2 == 0:
             return y1
-        if x > x2:
-            return y2
         m = (y2 - y1) / (x2 - x1)
-        v = m * x + x1
+        v = m * (x-x1) + y1
         return v
 
     @staticmethod
@@ -25,19 +23,20 @@ class FilterPriceSpread:
 
     @staticmethod
     def IsPriceSpread(price1: float, price2: float, spread: float = None) -> bool:
-        highRange = FilterPriceSpread.minMaxRangePercent if spread is None else spread
-        lowRange = highRange / 3
-        spreadPrice = FilterPriceSpread.slope(
-            3, highRange, 200, lowRange, price1)
-        if abs(price1 - price2) <= spreadPrice:
+        spread = FilterPriceSpread.minMaxRangePercent if spread is None else spread
+        adjSpread = FilterPriceSpread.slope(
+            3, spread, 200, spread/3.0, (price1 + price2)/2.0)
+        spreadPrice = adjSpread * (price1 + price2) / 2.0
+        if abs(price1 - price2) >= spreadPrice:
             return True
         return False
 
     @staticmethod
     def IsNearPrice(close1: float, close2: float, spread:float = None) -> bool:
         spread = FilterPriceSpread.minMaxNearPercent if spread is None else spread
-        priceDelta = FilterPriceSpread.slope(3, spread,
+        adjSpread = FilterPriceSpread.slope(3, spread,
                             200, spread / 3, close2)
+        priceDelta = adjSpread * (close1 + close2) / 2
         if abs(close2 - close1) <= abs(priceDelta):
             return True
         return False

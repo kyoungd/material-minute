@@ -60,7 +60,7 @@ class FilterPivotPoint:
 
     def Run(self, symbol: str, dataf: pd.DataFrame, close: float) -> bool:
         try:
-            dataf = dataf[dataf['Date'] > self.marketOpenAt]
+            dataf = dataf[dataf['Date'] >= self.marketOpenAt]
             # less than 15 minutes into the market.  too early.
             if len(dataf) < 3:
                 return False
@@ -73,16 +73,18 @@ class FilterPivotPoint:
             if highest >= pivot['pp'] >= lowest:
                 return False
             # if spread is not enough
-            if not FilterPriceSpread.IsPriceSpread(highest, lowest, 0.05):
+            if not FilterPriceSpread.IsPriceSpread(highest, pivot['pp'], 0.04) and not FilterPriceSpread.IsPriceSpread(lowest, pivot['pp'], 0.04):
                 return False
-            # if last point:
-            latestPrice = dataf.iloc[len(dataf)-1]['Close']
-            if not FilterPriceSpread.IsPriceSpread(latestPrice, pivot['pp'], 0.03):
+            # if first point:
+            openingClose = dataf.iloc[len(dataf)-1]['Close']
+            if FilterPriceSpread.IsPriceSpread(openingClose, pivot['pp'], 0.02):
                 return False
-            isOk, peaks = self.fMinmax.Run(dataf[::-1])
-            if len(peaks) % 2 == 1:
-                return True
-            return False
+            if not FilterPriceSpread.IsPriceSpread(close, pivot['pp'], 0.03):
+                return False
+            # isOk, peaks = self.fMinmax.Run(dataf[::-1])
+            # if len(peaks) % 2 == 0:
+            #     return False
+            return True
         except Exception as ex:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
             return False

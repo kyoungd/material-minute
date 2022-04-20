@@ -38,10 +38,9 @@ class EventBarDataProcess:
             app1 = volumeSpreadAnalysis()
             vsa = app1.Run(symbol, df)
             close = df.iloc[0]['Close']
-            supplyDemandZone = False
-            if FilterPriceSpread.IsEnoughSpread(df):
-                supplyDemandZone = self.sdz.Run(symbol, df, close)
-                # 1 and 2 for enguling and morning/evening star
+            if FilterPriceSpread.IsEnoughSpread(df, 0.3):
+                # 1 engulfing candle
+                # 2 morning/evening star candle
                 candlestickparttern = self.cs.Run(symbol, df)
                 # 4 for ABCD pattern
                 if self.abcd.Run(symbol, df, close):
@@ -49,14 +48,18 @@ class EventBarDataProcess:
                 # 8 for Pivot Point pattern
                 if self.pivot.Run(symbol, df, close):
                     candlestickparttern += 8
-            self.publisher.publish({
-                'datatype': 'VSA', 
-                'symbol': symbol, 
-                'timeframe': period, 
-                'vsa': vsa, 
-                'cs': candlestickparttern,
-                'sd': supplyDemandZone,
-                'price': close })
+                # 16 for Pivot Point trading
+                high = df.iloc[0]['High']
+                low = df.iloc[0]['Low']
+                if self.sdz.Run(symbol, df, high) or self.sdz.Run(symbol, df, low):
+                    candlestickparttern += 16
+                self.publisher.publish({
+                    'datatype': 'VSA', 
+                    'symbol': symbol, 
+                    'timeframe': period, 
+                    'vsa': vsa, 
+                    'cs': candlestickparttern,
+                    'price': close })
         except Exception as e:
             logging.warning(
                 f'Error EventBarDataProcess.filterCheck - {data} {e}')

@@ -10,17 +10,21 @@ class FilterDailySupplyDemandZone:
         self.marketOpenAt = TimeStamp.getMarketOpenTimestamp(
         ) if marketOpenAt is None else marketOpenAt
         self.minMaxRangePercent = 0.06
-        self.minMaxNearPercent = 0.04
+        self.minMaxNearPercent = 0.02
 
-    def Run(self, symbol: str, df: pd.DataFrame, close: float) -> bool:
+    def Run(self, symbol: str, dataf: pd.DataFrame, close: float) -> bool:
         try:
+            df = dataf[dataf['Date'] >= self.marketOpenAt]
             if len(df) <= 3:
                 return False
-            high = df['High'].loc[df['High'].idxmax()]
-            low = df['Low'].loc[df['Low'].idxmin()]
-            if FilterPriceSpread.IsNearPrice(high, close):
+            iMax = df['High'].idxmax()
+            iMin = df['Low'].idxmin()
+            high = df.iloc[iMax]['High']
+            low = df.iloc[iMin]['Low']
+
+            if iMax > 2 and FilterPriceSpread.IsNearPrice(high, close, self.minMaxNearPercent):
                 return True
-            if FilterPriceSpread.IsNearPrice(low, close):
+            if iMin > 2 and FilterPriceSpread.IsNearPrice(low, close, self.minMaxNearPercent):
                 return True
             return False
         except Exception as ex:
