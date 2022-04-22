@@ -36,7 +36,7 @@ class engulfingCandle:
 class starCandle:
     def __init__(self, symbol: str, df: pd.DataFrame):
         data = df.loc[0:5]
-        self.data = data[::-1]
+        self.data = df[::-1]
         self.symbol = symbol
 
     def CDLEVENINGDOJISTAR(self, df):
@@ -45,8 +45,8 @@ class starCandle:
         l = df.Low
         c = df.Close
         p = 0
-        res = talib.CDLEVENINGDOJISTAR(o, h, l, c)
-        return res
+        res:pd.Series = talib.CDLEVENINGDOJISTAR(o, h, l, c, p)
+        return res.sum()
 
     def CDLEVENINGSTAR(self, df):
         o = df.Open
@@ -54,8 +54,8 @@ class starCandle:
         l = df.Low
         c = df.Close
         p = 0
-        res = talib.CDLEVENINGSTAR(o, h, l, c)
-        return res
+        res:pd.Series = talib.CDLEVENINGSTAR(o, h, l, c, p)
+        return res.sum()
 
     def CDLMORNINGDOJISTAR(self, df):
         o = df.Open
@@ -63,8 +63,8 @@ class starCandle:
         l = df.Low
         c = df.Close
         p = 0
-        res = talib.CDLMORNINGDOJISTAR(o, h, l, c)
-        return res
+        res:pd.Series = talib.CDLMORNINGDOJISTAR(o, h, l, c, p)
+        return res.sum()
 
     def CDLMORNINGSTAR(self, df):
         o = df.Open
@@ -72,8 +72,8 @@ class starCandle:
         l = df.Low
         c = df.Close
         p = 0
-        res = talib.CDLMORNINGSTAR(o, h, l, c)
-        return res
+        res:pd.Series = talib.CDLMORNINGSTAR(o, h, l, c, p)
+        return res.sum()
 
     def run(self):
         try:
@@ -82,7 +82,7 @@ class starCandle:
             step2 = self.CDLEVENINGSTAR(self.data)
             step3 = self.CDLMORNINGDOJISTAR(self.data)
             step4 = self.CDLMORNINGSTAR(self.data)
-            return sum(step1) + sum(step2) + sum(step3) + sum(step4)
+            return step1 + step2 + step3 + step4
         except Exception as e:
             logging.error(
                 f'filterCandlePattern.starPattern.run: {self.symbol} - {e}')

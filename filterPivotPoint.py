@@ -56,8 +56,35 @@ class FilterPivotPoint:
         self.minMaxRangePercent = 0.06
         self.minMaxNearPercent = 0.04
         self.hash = PivotPointStack()
-        self.fMinmax = TightMinMax(tightMinMaxN=4)
+        self.fMinmax = TightMinMax(tightMinMaxN=5)
 
+    def IsItReady(self, pivot:dict, dataf: pd.DataFrame, close: float) -> bool:
+        highest = dataf['High'].loc[dataf['High'].idxmax()]
+        # Minimum in column
+        lowest = dataf['Low'].loc[dataf['Low'].idxmin()]
+        # if the stock crosses the pivot, return false
+        if highest >= pivot['pp'] >= lowest:
+            return False
+        # if spread is not enough
+        if not FilterPriceSpread.IsPriceSpread(highest, pivot['pp'], 0.04) and not FilterPriceSpread.IsPriceSpread(lowest, pivot['pp'], 0.04):
+            return False
+        # if first point:
+        openingClose = dataf.iloc[-1]['Close']
+        if not FilterPriceSpread.IsNearPrice(openingClose, pivot['pp'], 0.03):
+            return False
+        if FilterPriceSpread.IsNearPrice(close, pivot['pp'], 0.03):
+            return False
+        # isOk, peaks = self.fMinmax.Run(dataf[::-1])
+        # if len(peaks) % 2 == 0:
+        #     return False
+        return True
+
+    def IsPivotPointInPlay(self, pivot: dict, dataf: pd.DataFrame, close: float) -> bool:
+        _, keypoints = self.fMinmax.Run(dataf[::-1], isRemoveRepeatMinMaxOnly=True)
+        if len(keypoints) > 0 and len(keypoints) % 2 == 1:
+            return True
+        return False
+    
     def Run(self, symbol: str, dataf: pd.DataFrame, close: float) -> bool:
         try:
             dataf = dataf[dataf['Date'] >= self.marketOpenAt]
@@ -67,24 +94,10 @@ class FilterPivotPoint:
             pivot = self.hash.Get(symbol)
             if pivot is None:
                 return False
-            highest = dataf['High'].loc[dataf['High'].idxmax()]
-            lowest = dataf['Low'].loc[dataf['Low'].idxmin()]      # Minimum in column
-            # if the stock crosses the pivot, return false
-            if highest >= pivot['pp'] >= lowest:
-                return False
-            # if spread is not enough
-            if not FilterPriceSpread.IsPriceSpread(highest, pivot['pp'], 0.04) and not FilterPriceSpread.IsPriceSpread(lowest, pivot['pp'], 0.04):
-                return False
-            # if first point:
-            openingClose = dataf.iloc[len(dataf)-1]['Close']
-            if FilterPriceSpread.IsPriceSpread(openingClose, pivot['pp'], 0.02):
-                return False
-            if not FilterPriceSpread.IsPriceSpread(close, pivot['pp'], 0.03):
-                return False
-            # isOk, peaks = self.fMinmax.Run(dataf[::-1])
-            # if len(peaks) % 2 == 0:
-            #     return False
-            return True
+            if self.IsItReady(pivot, dataf, close):
+                return self.IsPivotPointInPlay(pivot, dataf, close)
+            return False
         except Exception as ex:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
             return False
+#

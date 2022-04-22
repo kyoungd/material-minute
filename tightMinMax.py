@@ -37,7 +37,7 @@ class TightMinMax:
         firstMin = False
         l_minmax = None
         minMaxSet = []
-        for ix in range(len(df.index)):
+        for ix in df.index:
             ldate = df.iloc[ix]['Date']
             lmin = df.iloc[ix]['min']
             lmax = df.iloc[ix]['max']
@@ -76,7 +76,31 @@ class TightMinMax:
         df1 = pd.DataFrame(minMaxSet)
         return firstMin, df1
 
-    def Run(self, df:pd.DataFrame):
+    def removeRepeatMinMax(self, df):
+        firstMin = False
+        l_minmax = None
+        minMaxSet = []
+        lastMinMax = ''
+        for ix in df.index:
+            if ix > 0 and ix < len(df)-1:
+                ldate = df.iloc[ix]['Date']
+                lmin = df.iloc[ix]['min']
+                lmax = df.iloc[ix]['max']
+                if not np.isnan(lmin):
+                    if lastMinMax != 'min':
+                        l_minmax = self.minMaxItem(ldate, lmin, 'min')
+                        lastMinMax = 'min'
+                        minMaxSet.append(l_minmax)
+                elif not np.isnan(lmax):
+                    if lastMinMax != 'max':
+                        l_minmax = self.minMaxItem(ldate, lmax, 'max')
+                        lastMinMax = 'max'
+                        minMaxSet.append(l_minmax)
+        df1 = pd.DataFrame(minMaxSet)
+        return firstMin, df1
+
+    def Run(self, df:pd.DataFrame, isRemoveRepeatMinMaxOnly=None):
+        isRemoveRepeatMinMaxOnly = False if isRemoveRepeatMinMaxOnly is None else isRemoveRepeatMinMaxOnly
         df = df.reset_index()
         n = self.minMaxN        # number of points to be checked before and after
 
@@ -88,5 +112,9 @@ class TightMinMax:
         df['max'] = df.iloc[argrelextrema(df['up'].values, np.greater_equal,
                             order=n)[0]]['up']
 
-        isFirstMin, df1 = self.removeDuplicateMinMax(df)
-        return isFirstMin, df1
+        if isRemoveRepeatMinMaxOnly:
+            isFirstMin, df1 = self.removeRepeatMinMax(df)
+            return isFirstMin, df1
+        else:
+            isFirstMin, df1 = self.removeDuplicateMinMax(df)
+            return isFirstMin, df1

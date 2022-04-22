@@ -9,6 +9,7 @@ class volumeSpreadAnalysis:
         self.factor4 = 1.8
         self.factor5 = 1.8
         self.factor8 = 1.8
+        self.factor11 = 3.0
 
     def isCanCalculate(self, df: pd.DataFrame, period: int):
         return False if len(df) < period else True
@@ -97,18 +98,12 @@ class volumeSpreadAnalysis:
         return 0
 
     def localMinMax(self, df: pd.DataFrame, index: int, barCount=None):
-        barCount = 15 if barCount is None else barCount
-        localMin = min(df.iloc[index]['Close'], df.iloc[index]['Open'])
-        localMax = max(df.iloc[index]['Close'], df.iloc[index]['Open'])
-        lowCount = 0
-        highCount = 0
-        for ix in range(index, barCount + index):
-            row = df.iloc[ix]
-            if row['Close'] <= localMin or row['Open'] <= localMin:
-                lowCount += 1
-            if row['Close'] >= localMax or row['Open'] >= localMax:
-                highCount += 1
-        return False if lowCount >= barCount or highCount >= barCount else True
+        iMax = df['Close'].idxmax()
+        iMin = df['Close'].idxmin()
+        if iMax == index or iMin == index:
+            return True
+        return False
+
 
     def isVsaOk(self, df: pd.DataFrame, spreads: list, volumes: list, period: int) -> int:
         ix = 0
@@ -122,25 +117,16 @@ class volumeSpreadAnalysis:
         v4 = volumes[ix+3]
         # down thrust
         if abs(s2) < 0.2 and v2 > 3 and not self.isSameSign(s1, s2):
-            if self.localMinMax(df, ix, 4):
+            if self.localMinMax(df, 1, 4):
                 return 1
         # selling climax
         if abs(s2) > 3 and v2 > 3 and not self.isSameSign(s1, s2) and abs(s2) > abs(s1):
-            if self.localMinMax(df, ix, 4):
+            if self.localMinMax(df, 1, 4):
                 return 2
-        if self.isSameSign(s4, s3) and self.isSameSign(s2, s3) and not self.isSameSign(s2, s1):
-            # effort is less than result
-            if (abs(s4) < abs(s3) < abs(s2)) and (v4 > v3 > v2):
-                return 3
-            # effort is more than result
-            if (abs(s4) > abs(s3) > abs(s2)) and (v4 < v3 < v2):
-                return 4
 
-        if self.isSameSign(s2, s1) and self.isSameSign(s3, s2) and self.isSameSign(s4, s3):
-            # no supply bar, pseudo down thrust, inverse downard thrust
-            if (abs(s2) * self.factor5) < abs(s3) and (v2 * self.factor5) < v3 and (v2 * self.factor5) < v4:
-                if self.localMinMax(df, ix, 4):
-                    return 5
+        if not self.isSameSign(s2, s4) and self.isSameSign(s1, s2):
+            if abs(s2) > abs(s3) * self.factor11 and abs(s4) > abs(s3) * self.factor11:
+                return 11
 
         return 0
 
