@@ -36,7 +36,7 @@ class engulfingCandle:
 class starCandle:
     def __init__(self, symbol: str, df: pd.DataFrame):
         data = df.loc[0:5]
-        self.data = df[::-1]
+        self.data = data[::-1]
         self.symbol = symbol
 
     def CDLEVENINGDOJISTAR(self, df):
