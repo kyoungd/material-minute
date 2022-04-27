@@ -12,7 +12,7 @@ class FilterAbcdPattern:
         self.isFirstMin = None
  
     def IsAbcdPattern(self, A:float, B: float, C: float, close) -> bool:
-        if (B > C > A) or (B < C < A):
+        if (B > A > C) or (B < A < C):
             if FilterPriceSpread.IsNearPrice(B, close):
                 return True
         return False
@@ -20,11 +20,11 @@ class FilterAbcdPattern:
     def Run(self, symbol:str, dataf: pd.DataFrame, close: float) -> bool:
         try:
             isFirstMin, df = self.fMinmax.Run(dataf)
-            if len(df) >= 3 and self.IsAbcdPattern(df.iloc[0][1], df.iloc[1][1], df.iloc[2][1], close):
+            if len(df) >= 3 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[1]['Close'], df.iloc[2]['Close'], close):
                 return True
-            if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0][1], df.iloc[1][1], df.iloc[4][1], close):
+            if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[1]['Close'], df.iloc[4]['Close'], close):
                 return True
-            if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0][1], df.iloc[3][1], df.iloc[4][1], close):
+            if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[3]['Close'], df.iloc[4]['Close'], close):
                 return True
             return False
         except Exception as ex:

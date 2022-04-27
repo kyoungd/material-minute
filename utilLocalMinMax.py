@@ -6,9 +6,9 @@ import os
 
 
 class LocalMinMax:
-    def __init__(self, colName=None):
+    def __init__(self, colName=None, degreeFit=None):
         self.colName = 'Close' if colName is None else colName
-        self.degreeFit = int(EnvFile.Get('LOCAL_MINMAX_N', '30'))
+        self.degreeFit = int(EnvFile.Get('LOCAL_MINMAX_N', '30')) if degreeFit is None else degreeFit
 
     def Polyfit(self, df: pd.DataFrame, colName:str, degreeFit:int):
         # discrete dataset

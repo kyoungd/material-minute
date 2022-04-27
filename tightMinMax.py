@@ -30,8 +30,8 @@ class TightMinMax:
             rows.append(open if open < close else close)
         return rows
 
-    def minMaxItem(self, onedate, close, onetype):
-        return {'Date': onedate, 'Close': close, 'Type': onetype}
+    def minMaxItem(self, idx:int, onedate:str, close:float, onetype:str):
+        return {'x': idx, 'Date': onedate, 'Close': close, 'Type': onetype}
 
     def removeDuplicateMinMax(self, df):
         firstMin = False
@@ -44,34 +44,34 @@ class TightMinMax:
             if not np.isnan(lmin):
                 value = lmin
                 if l_minmax is None:
-                    l_minmax = self.minMaxItem(ldate, value, 'min')
+                    l_minmax = self.minMaxItem(ix, ldate, value, 'min')
                     minMaxSet.append(l_minmax)
                     firstMin = True
                 else:
                     newType = 'max'
                     if l_minmax['Type'] != newType:
-                        l_minmax = self.minMaxItem(ldate, value, newType)
+                        l_minmax = self.minMaxItem(ix, ldate, value, newType)
                         minMaxSet.append(l_minmax)
                     else:
                         if value < l_minmax['Close']:
                             minMaxSet.pop()
-                            l_minmax = self.minMaxItem(ldate, value, newType)
+                            l_minmax = self.minMaxItem(ix, ldate, value, newType)
                             minMaxSet.append(l_minmax)
             elif not np.isnan(lmax):
                 value = lmax
                 if l_minmax is None:
-                    l_minmax = self.minMaxItem(ldate, value, 'max')
+                    l_minmax = self.minMaxItem(ix, ldate, value, 'max')
                     minMaxSet.append(l_minmax)
                     firstMin = False
                 else:
                     newType = 'min'
                     if l_minmax['Type'] != newType:
-                        l_minmax = self.minMaxItem(ldate, value, newType)
+                        l_minmax = self.minMaxItem(ix, ldate, value, newType)
                         minMaxSet.append(l_minmax)
                     else:
                         if value > l_minmax['Close']:
                             minMaxSet.pop()
-                            l_minmax = self.minMaxItem(ldate, value, newType)
+                            l_minmax = self.minMaxItem(ix, ldate, value, newType)
                             minMaxSet.append(l_minmax)
         df1 = pd.DataFrame(minMaxSet)
         return firstMin, df1
@@ -88,12 +88,12 @@ class TightMinMax:
                 lmax = df.iloc[ix]['max']
                 if not np.isnan(lmin):
                     if lastMinMax != 'min':
-                        l_minmax = self.minMaxItem(ldate, lmin, 'min')
+                        l_minmax = self.minMaxItem(ix, ldate, lmin, 'min')
                         lastMinMax = 'min'
                         minMaxSet.append(l_minmax)
                 elif not np.isnan(lmax):
                     if lastMinMax != 'max':
-                        l_minmax = self.minMaxItem(ldate, lmax, 'max')
+                        l_minmax = self.minMaxItem(ix, ldate, lmax, 'max')
                         lastMinMax = 'max'
                         minMaxSet.append(l_minmax)
         df1 = pd.DataFrame(minMaxSet)

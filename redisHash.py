@@ -86,3 +86,10 @@ class PivotPointStack(RedisHash):
     def Reset(self):
         self.deleteAll()
 
+class KeyLevelsStack(RedisHash):
+    def __init__(self):
+        key = "HASH_KEY_LEVELS"
+        super().__init__(key)
+    
+    def Reset(self):
+        self.deleteAll()
