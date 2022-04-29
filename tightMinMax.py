@@ -70,7 +70,10 @@ class TightMinMax:
                         minMaxSet.append(l_minmax)
                     else:
                         if value > l_minmax['Close']:
-                            minMaxSet.pop()
+                            if len(minMaxSet) == 1:
+                                minMaxSet[0]['Type'] = 'max'   
+                            else:
+                                minMaxSet.pop()
                             l_minmax = self.minMaxItem(ix, ldate, value, newType)
                             minMaxSet.append(l_minmax)
         df1 = pd.DataFrame(minMaxSet)

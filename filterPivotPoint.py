@@ -7,6 +7,7 @@ from redisUtil import TimeStamp
 from filterPriceSpread import FilterPriceSpread
 from redisHash import PivotPointStack
 from tightMinMax import TightMinMax
+from util import Util
 
 
 testdata = [{"t": "2022-04-14T13:19:00Z", "o": 7.12, "h": 7.12, "l": 7.12, "c": 7.12, "v": 200, "n": 2, "vw": 7.12}, 
@@ -101,3 +102,57 @@ class FilterPivotPoint:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
             return False
 #
+
+
+class FilterCenterPivot:
+
+    def __init__(self, marketOpenAt=None):
+        self.marketOpenAt = TimeStamp.getMarketOpenTimestamp(
+        ) if marketOpenAt is None else marketOpenAt
+        self.minMaxRangePercent = 0.06
+        self.minMaxNearPercent = 0.04
+        self.hash = PivotPointStack()
+        self.fMinmax = TightMinMax(tightMinMaxN=5)
+
+    def IsItReady(self, pivot: dict, dataf: pd.DataFrame, close: float) -> bool:
+        if not FilterPriceSpread.IsNearPrice(close, pivot['pp'], 0.03):
+            return False
+        return True
+
+    def beforeAndAfterSlope(self, df: pd.DataFrame, close: float) -> pd.DataFrame:
+        lastRow = None
+        takeOffSlopes = []
+        for idx, row in df.iterrows():
+            if not lastRow is None:
+                slope = (row['Close'] - lastRow['Close']) / (row['x'] - lastRow['x'])
+                standardSlope = slope * Util.SlopeOfPrice(close)
+                takeOffSlopes.append(abs(standardSlope))
+            else:
+                takeOffSlopes.append(0)
+            lastRow = row
+        df = df.assign(Takeoff = takeOffSlopes)
+        return df
+
+    def IsInPlay(self, pivot: dict, dataf: pd.DataFrame, close: float) -> bool:
+        if self.IsItReady(pivot, dataf, close):
+            isFirstMin, df = self.fMinmax.Run(dataf)
+            df1 = self.beforeAndAfterSlope(df, close)
+        return False
+    
+    def Run(self, symbol: str, dataf: pd.DataFrame, close: float, isDebug:bool = None) -> bool:
+        try:
+            dataf = dataf[dataf['Date'] >= self.marketOpenAt]
+            # less than 15 minutes into the market.  too early.
+            if len(dataf) < 3:
+                return False
+            pivot = self.hash.Get(symbol)
+            if pivot is None:
+                return False
+            if self.IsItReady(pivot, dataf, close):
+                return self.IsPivotPointInPlay(pivot, dataf, close)
+            isFirstMin, df = self.fMinmax.Run(dataf)
+            df1 = self.beforeAndAfterSlope(df, close)
+            return False
+        except Exception as ex:
+            logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
+            return False

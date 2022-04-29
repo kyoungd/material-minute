@@ -6,12 +6,13 @@ from redisUtil import TimeStamp
 from filterPriceSpread import FilterPriceSpread
 from tightMinMax import TightMinMax
 from util import Util
+from environ import EnvFile
 
 class FilterDailySupplyDemandZone:
     def __init__(self):
         self.fMinmax = TightMinMax(tightMinMaxN=3)
         self.minMaxNearPercent = 0.03
-        self.takeoffSlope = 1
+        self.takeoffSlope = float(EnvFile.Get('FILTER_SUPPLY_DEMAND_TAKEOFF_SLOPE', '0.25'))
 
     def IsPrerequisite(self, dataf: pd.DataFrame, close: float) -> bool:
         if len(dataf) <= 5:
