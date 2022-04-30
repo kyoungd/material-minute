@@ -28,8 +28,8 @@ class EventBarHandleRealtimeData:
     def isTimeInterval(self, timeframe:str) -> bool:
         timeIntervals = {
             # RedisTimeFrame.MIN2: 2,
-            # RedisTimeFrame.MIN15: 15
-            RedisTimeFrame.MIN5: 5
+            # RedisTimeFrame.MIN5: 5,
+            RedisTimeFrame.MIN15: 15
         }
         min = timeIntervals.get(timeframe, -1)
         if min <= 0:

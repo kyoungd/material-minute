@@ -9,7 +9,7 @@ from util import Util
 
 class FilterAbcdPattern:
     def __init__(self):
-        self.fMinmax = TightMinMax(tightMinMaxN=4)
+        self.fMinmax = TightMinMax(tightMinMaxN=2)
         self.isFirstMin = None
  
     def IsAbcdPattern(self, A:float, B: float, C: float, close) -> bool:
@@ -37,19 +37,14 @@ class FilterAbcdPattern:
         
     def Run(self, symbol:str, dataf: pd.DataFrame, close: float) -> bool:
         try:
+            close = dataf.iloc[0]['Close']
             isFirstMin, df = self.fMinmax.Run(dataf)
             if len(df) >= 3 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[1]['Close'], df.iloc[2]['Close'], close):
-                df1 = self.getMacdData(dataf[::-1])
-                if self.isMacdHistogramSync(df1, df.iloc[0]['x'], df.iloc[1]['x'], df.iloc[2]['x']):
-                    return True
+                return True
             if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[1]['Close'], df.iloc[4]['Close'], close):
-                df1 = self.getMacdData(dataf[::-1])
-                if self.isMacdHistogramSync(df1, df.iloc[0]['x'], df.iloc[1]['x'], df.iloc[4]['x']):
-                    return True
+                return True
             if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[3]['Close'], df.iloc[4]['Close'], close):
-                df1 = self.getMacdData(dataf[::-1])
-                if self.isMacdHistogramMSync(df1, df.iloc[0]['x'], df.iloc[3]['x'], df.iloc[4]['x']):
-                    return True
+                return True
             return False
         except Exception as ex:
             logging.error(f'FilterAbcdPattern {symbol} - {ex}')

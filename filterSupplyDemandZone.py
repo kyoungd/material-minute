@@ -12,7 +12,7 @@ class FilterDailySupplyDemandZone:
     def __init__(self):
         self.fMinmax = TightMinMax(tightMinMaxN=3)
         self.minMaxNearPercent = 0.03
-        self.takeoffSlope = float(EnvFile.Get('FILTER_SUPPLY_DEMAND_TAKEOFF_SLOPE', '0.25'))
+        self.takeoffSlope = float(EnvFile.Get('FILTER_SUPPLY_DEMAND_TAKEOFF_SLOPE', '0.06'))
 
     def IsPrerequisite(self, dataf: pd.DataFrame, close: float) -> bool:
         if len(dataf) <= 5:
@@ -51,9 +51,9 @@ class FilterDailySupplyDemandZone:
                 slope = (row['Close'] - lastRow['Close']) / (row['x'] - lastRow['x'])
                 standardSlope = slope * Util.SlopeOfPrice(close)
                 takeOffSlopes.append(abs(standardSlope))
-            else:
-                takeOffSlopes.append(0)
             lastRow = row
+        if len(df) > 0:
+            takeOffSlopes.append(0)
         df = df.assign(Takeoff = takeOffSlopes)
         return df
 
@@ -66,25 +66,28 @@ class FilterDailySupplyDemandZone:
                 takeoff = row['Takeoff']
                 high, low = self.getMinmaxOnClose(df[idx+1:])
                 if high is None or low is None:
-                    dataPoints.append({'Close': key, 'Takeoff': takeoff})
+                    dataPoints.append({'Close': key, 'Date': row['Date'], 'Takeoff': takeoff})
                 if (high * 1.02) >= key >= (low * 0.98):
                     pass
                 else:
-                    dataPoints.append({'Close': key, 'Takeoff': takeoff})
+                    dataPoints.append({'Close': key, 'Date': row['Date'], 'Takeoff': takeoff})
         except Exception as e:
             logging.error(f'firstKeyPoints {e}')
         return dataPoints
     
     def Run(self, symbol: str, df: pd.DataFrame, close: float) -> bool:
         try:
+            close = df.iloc[0]['Close']
             if not self.IsPrerequisite(df, close):
                 return False
             isPtMin, keypoints = self.fMinmax.Run(df, isRemoveRepeatMinMaxOnly=True)
             keypoints:pd.DataFrame = self.beforeAndAfterSlope(keypoints, close)
             firstkeys:list = self.firstKeyPoints(keypoints[::-1])
-            for row in firstkeys:
-                if FilterPriceSpread.IsNearPrice(row['Close'], close, self.minMaxNearPercent) and row['Takeoff'] >= self.takeoffSlope:
-                    return True
+            for row in firstkeys[::-1]:
+                if FilterPriceSpread.IsNearPrice(row['Close'], close, self.minMaxNearPercent):
+                    takeoff = self.takeoffSlope * Util.SlopeOfPrice(close)
+                    if row['Takeoff'] >= takeoff:
+                        return True
             return False
         except Exception as ex:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')

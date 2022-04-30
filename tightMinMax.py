@@ -38,44 +38,48 @@ class TightMinMax:
         l_minmax = None
         minMaxSet = []
         for ix in df.index:
-            ldate = df.iloc[ix]['Date']
-            lmin = df.iloc[ix]['min']
-            lmax = df.iloc[ix]['max']
-            if not np.isnan(lmin):
-                value = lmin
-                if l_minmax is None:
-                    l_minmax = self.minMaxItem(ix, ldate, value, 'min')
-                    minMaxSet.append(l_minmax)
-                    firstMin = True
-                else:
-                    newType = 'max'
-                    if l_minmax['Type'] != newType:
-                        l_minmax = self.minMaxItem(ix, ldate, value, newType)
+            if ix > 0:
+                ldate = df.iloc[ix]['Date']
+                lmin = df.iloc[ix]['min']
+                lmax = df.iloc[ix]['max']
+                if not np.isnan(lmin):
+                    value = lmin
+                    if l_minmax is None:
+                        l_minmax = self.minMaxItem(ix, ldate, value, 'min')
                         minMaxSet.append(l_minmax)
+                        firstMin = True
                     else:
-                        if value < l_minmax['Close']:
-                            minMaxSet.pop()
+                        newType = 'max'
+                        if l_minmax['Type'] != newType:
                             l_minmax = self.minMaxItem(ix, ldate, value, newType)
                             minMaxSet.append(l_minmax)
-            elif not np.isnan(lmax):
-                value = lmax
-                if l_minmax is None:
-                    l_minmax = self.minMaxItem(ix, ldate, value, 'max')
-                    minMaxSet.append(l_minmax)
-                    firstMin = False
-                else:
-                    newType = 'min'
-                    if l_minmax['Type'] != newType:
-                        l_minmax = self.minMaxItem(ix, ldate, value, newType)
+                        else:
+                            if value < l_minmax['Close']:
+                                if len(minMaxSet) == 1:
+                                    minMaxSet[0]['Type'] = 'min'
+                                else:
+                                    minMaxSet.pop()
+                                l_minmax = self.minMaxItem(ix, ldate, value, newType)
+                                minMaxSet.append(l_minmax)
+                elif not np.isnan(lmax):
+                    value = lmax
+                    if l_minmax is None:
+                        l_minmax = self.minMaxItem(ix, ldate, value, 'max')
                         minMaxSet.append(l_minmax)
+                        firstMin = False
                     else:
-                        if value > l_minmax['Close']:
-                            if len(minMaxSet) == 1:
-                                minMaxSet[0]['Type'] = 'max'   
-                            else:
-                                minMaxSet.pop()
+                        newType = 'min'
+                        if l_minmax['Type'] != newType:
                             l_minmax = self.minMaxItem(ix, ldate, value, newType)
                             minMaxSet.append(l_minmax)
+                        else:
+                            if value > l_minmax['Close']:
+                                if len(minMaxSet) == 1:
+                                    minMaxSet[0]['Type'] = 'max'   
+                                else:
+                                    minMaxSet.pop()
+                                l_minmax = self.minMaxItem(ix, ldate, value, newType)
+                                minMaxSet.append(l_minmax)
         df1 = pd.DataFrame(minMaxSet)
         return firstMin, df1
 

@@ -29,7 +29,7 @@ class TestEventBarCandidateCheck(TestCase):
     def doNothing(self, data):
         self.hitCount += 1
 
-    def test_event_bar_candidate_pass(self):
+    def test_event_bar_candidate_pass_2(self):
         pubPush = TestPublisher(self.doNothing)
         pubSave = TestPublisher(self.doNothing)
         for i in range(5):

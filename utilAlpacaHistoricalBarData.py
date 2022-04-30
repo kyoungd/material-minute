@@ -11,7 +11,7 @@ class AlpacaHistoricalBarData:
         self.symbol = symbol
         self.starttime = starttime
         self.endtime = endtime
-        self.timeframe = TimePeriod.Min5.value if timeframe is None else timeframe
+        self.timeframe = TimePeriod.Min15.value if timeframe is None else timeframe
         self.data = None
         
     def getFileName(self, symbol: str, starttime: str, endtime: str, timeframe: str) -> list:

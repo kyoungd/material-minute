@@ -6,7 +6,7 @@ from alpacaHistorical import TimePeriod
 class TestAlpacaHistoricalBarData(unittest.TestCase):
     def setUp(self):
         self.symbol = 'WBD'
-        self.timeframe = TimePeriod.Min5.value
+        self.timeframe = TimePeriod.Min15.value
         self.starttime = '2022-04-28T00:01:04Z'
         self.endtime = '2022-04-28T15:30:00Z'
         self.app = AlpacaHistoricalBarData(self.symbol, self.starttime, self.endtime, self.timeframe)

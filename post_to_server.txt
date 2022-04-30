@@ -2088,3 +2088,1157 @@
 []
 03:41PM on April 28, 2022
 []
+01:06AM on April 29, 2022
+[]
+01:11AM on April 29, 2022
+[]
+01:16AM on April 29, 2022
+[]
+03:46AM on April 29, 2022
+[]
+04:06AM on April 29, 2022
+[]
+04:11AM on April 29, 2022
+[]
+04:16AM on April 29, 2022
+[]
+04:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.2}]
+04:46AM on April 29, 2022
+[]
+05:01AM on April 29, 2022
+[]
+05:06AM on April 29, 2022
+[]
+05:11AM on April 29, 2022
+[]
+05:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.51}]
+05:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 7.72}]
+05:31AM on April 29, 2022
+[]
+05:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.06}]
+05:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.1}]
+05:46AM on April 29, 2022
+[]
+05:51AM on April 29, 2022
+[]
+05:56AM on April 29, 2022
+[]
+06:06AM on April 29, 2022
+[]
+06:11AM on April 29, 2022
+[]
+06:16AM on April 29, 2022
+[]
+06:21AM on April 29, 2022
+[]
+06:26AM on April 29, 2022
+[]
+06:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ACCD", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.875}]
+06:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "YANG", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 15.5499}]
+06:31AM on April 29, 2022
+[]
+06:31AM on April 29, 2022
+[]
+06:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "PTON", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 19.13}]
+06:31AM on April 29, 2022
+[]
+06:31AM on April 29, 2022
+[]
+06:31AM on April 29, 2022
+[]
+06:32AM on April 29, 2022
+[]
+06:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABD", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 51.675}, {"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 24.2}]
+06:36AM on April 29, 2022
+[]
+06:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TECS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 38.14}, {"datatype": "VSA", "symbol": "TECL", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 46.97}]
+06:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "DADA", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 7.98}, {"datatype": "VSA", "symbol": "NVTA", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.325}]
+06:36AM on April 29, 2022
+[]
+06:37AM on April 29, 2022
+[]
+06:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ACCD", "timeframe": "5Min", "vsa": 2, "cs": 0, "price": 5.23}]
+06:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NVTA", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.335}]
+06:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 24.07}, {"datatype": "VSA", "symbol": "TECL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 47.16}]
+06:41AM on April 29, 2022
+[]
+06:42AM on April 29, 2022
+[]
+06:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TECL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 46.68}]
+06:46AM on April 29, 2022
+[]
+06:46AM on April 29, 2022
+[]
+06:46AM on April 29, 2022
+[]
+06:47AM on April 29, 2022
+[]
+06:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 52.2199}, {"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 11.2201}, {"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 8.27}, {"datatype": "VSA", "symbol": "YANG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 15.8499}]
+06:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.23}, {"datatype": "VSA", "symbol": "NVTA", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.375}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 32.28}, {"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.45}]
+06:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ALLG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 12.9508}]
+06:52AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 17, "price": 6.165}, {"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 32.5953}]
+06:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BULZ", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 8.17}, {"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 52.1315}, {"datatype": "VSA", "symbol": "BBBY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 14.84}, {"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.3}, {"datatype": "VSA", "symbol": "YANG", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 15.7}, {"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 13.11}, {"datatype": "VSA", "symbol": "GTYH", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.185}, {"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.21}, {"datatype": "VSA", "symbol": "EGO", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.525}, {"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 33.085}]
+06:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 11.3279}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 32.36}, {"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 35.0864}, {"datatype": "VSA", "symbol": "NVTA", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 5.415}]
+06:57AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VERU", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 11.95}]
+07:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABD", "timeframe": "5Min", "vsa": 0, "cs": 17, "price": 49.4}]
+07:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NVTA", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.45}, {"datatype": "VSA", "symbol": "VERU", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 11.895}]
+07:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXL", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 25.79}, {"datatype": "VSA", "symbol": "TECS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 37.5}]
+07:02AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "YANG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 15.63}, {"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.22}, {"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 35.53}, {"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 33.33}, {"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 11.37}]
+07:02AM on April 29, 2022
+[]
+07:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 35.42}, {"datatype": "VSA", "symbol": "ACCD", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.1}]
+07:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 33.1482}, {"datatype": "VSA", "symbol": "EGO", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.67}, {"datatype": "VSA", "symbol": "NVAX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 52.1773}]
+07:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 25.78}]
+07:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 51.38}]
+07:07AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 17, "price": 24.69}, {"datatype": "VSA", "symbol": "YANG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 15.6}]
+07:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CHWY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 31.5999}]
+07:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "INDO", "timeframe": "5Min", "vsa": 0, "cs": 17, "price": 20.8871}, {"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 11.35}]
+07:12AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "YANG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 15.47}, {"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 25.6248}, {"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.265}, {"datatype": "VSA", "symbol": "ACCD", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.345}, {"datatype": "VSA", "symbol": "RBLX", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 32.9787}]
+07:12AM on April 29, 2022
+[]
+07:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.26}]
+07:16AM on April 29, 2022
+[]
+07:16AM on April 29, 2022
+[]
+07:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 25.61}]
+07:16AM on April 29, 2022
+[]
+07:17AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.87}, {"datatype": "VSA", "symbol": "PTON", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 19.3}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 31.55}]
+07:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ZYME", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.68}, {"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 11.0556}, {"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 25.57}, {"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.2016}, {"datatype": "VSA", "symbol": "ATER", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.0957}]
+07:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 49.81}, {"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.19}]
+07:21AM on April 29, 2022
+[]
+07:22AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.15}]
+07:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "AG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.6498}, {"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 32.51}, {"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 25.63}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 31.06}, {"datatype": "VSA", "symbol": "PLUG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 22.39}, {"datatype": "VSA", "symbol": "EGO", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.68}, {"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 12.81}, {"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 49.62}]
+07:26AM on April 29, 2022
+[]
+07:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 34.7}]
+07:27AM on April 29, 2022
+[]
+07:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 49.8}]
+07:31AM on April 29, 2022
+[]
+07:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.675}, {"datatype": "VSA", "symbol": "TQQQ", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 39.868}, {"datatype": "VSA", "symbol": "PLUG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 22.375}]
+07:32AM on April 29, 2022
+[]
+07:32AM on April 29, 2022
+[]
+07:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NVAX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 50.62}, {"datatype": "VSA", "symbol": "OPNT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 23.36}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 31.37}]
+07:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TQQQ", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 39.69}, {"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.65}, {"datatype": "VSA", "symbol": "SWVL", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 8.9993}]
+07:36AM on April 29, 2022
+[]
+07:37AM on April 29, 2022
+[]
+07:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 11, "cs": 8, "price": 31.38}]
+07:41AM on April 29, 2022
+[]
+07:42AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.6706}]
+07:46AM on April 29, 2022
+[]
+07:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TQQQ", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 39.61}]
+07:46AM on April 29, 2022
+[]
+07:46AM on April 29, 2022
+[]
+07:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.545}]
+07:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 24.55}]
+07:47AM on April 29, 2022
+[]
+07:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VERU", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 11.86}, {"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 52.09}, {"datatype": "VSA", "symbol": "YANG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.1889}]
+07:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 52.28}, {"datatype": "VSA", "symbol": "NVAX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 50.1349}]
+07:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "JDST", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.43}, {"datatype": "VSA", "symbol": "PTON", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 18.84}]
+07:52AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.53}]
+07:56AM on April 29, 2022
+[]
+07:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 51.9307}]
+07:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "GTYH", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.1689}]
+07:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ACCD", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.7856}, {"datatype": "VSA", "symbol": "TECL", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 45.31}, {"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.5}]
+07:56AM on April 29, 2022
+[]
+07:56AM on April 29, 2022
+[]
+07:57AM on April 29, 2022
+[]
+08:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 52.54}, {"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 25.05}]
+08:01AM on April 29, 2022
+[]
+08:01AM on April 29, 2022
+[]
+08:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.3}, {"datatype": "VSA", "symbol": "MARA", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 16.59}, {"datatype": "VSA", "symbol": "GTYH", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.165}]
+08:01AM on April 29, 2022
+[]
+08:02AM on April 29, 2022
+[]
+08:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TZA", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 37.92}, {"datatype": "VSA", "symbol": "DCPH", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.87}]
+08:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "AG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.61}, {"datatype": "VSA", "symbol": "PLUG", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 22.318}]
+08:07AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 34.08}]
+08:07AM on April 29, 2022
+[]
+08:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 52.1255}]
+08:11AM on April 29, 2022
+[]
+08:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 34.0753}]
+08:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.3262}, {"datatype": "VSA", "symbol": "NVAX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 50.58}, {"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.17}]
+08:11AM on April 29, 2022
+[]
+08:12AM on April 29, 2022
+[]
+08:12AM on April 29, 2022
+[]
+08:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 33.91}]
+08:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "FRGE", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 18.4328}]
+08:16AM on April 29, 2022
+[]
+08:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NVTA", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.41}]
+08:17AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 52.3246}]
+08:21AM on April 29, 2022
+[]
+08:21AM on April 29, 2022
+[]
+08:21AM on April 29, 2022
+[]
+08:21AM on April 29, 2022
+[]
+08:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RBLX", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 31.89}]
+08:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.8996}]
+08:21AM on April 29, 2022
+[]
+08:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "PLUG", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 22.14}, {"datatype": "VSA", "symbol": "BLTE", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 14.3849}]
+08:22AM on April 29, 2022
+[]
+08:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.46}]
+08:26AM on April 29, 2022
+[]
+08:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 25.26}]
+08:26AM on April 29, 2022
+[]
+08:27AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 52.2}, {"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.0}]
+08:31AM on April 29, 2022
+[]
+08:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.2}]
+08:31AM on April 29, 2022
+[]
+08:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.99}]
+08:31AM on April 29, 2022
+[]
+08:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.23}, {"datatype": "VSA", "symbol": "DWAC", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 51.0124}]
+08:31AM on April 29, 2022
+[]
+08:32AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 51.8549}, {"datatype": "VSA", "symbol": "TZA", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 37.85}]
+08:36AM on April 29, 2022
+[]
+08:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.94}]
+08:36AM on April 29, 2022
+[]
+08:36AM on April 29, 2022
+[]
+08:36AM on April 29, 2022
+[]
+08:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 11, "cs": 4, "price": 52.03}]
+08:37AM on April 29, 2022
+[]
+08:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NCR", "timeframe": "5Min", "vsa": 0, "cs": 24, "price": 36.798}]
+08:41AM on April 29, 2022
+[]
+08:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.9696}]
+08:41AM on April 29, 2022
+[]
+08:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 32.22}]
+08:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.365}]
+08:42AM on April 29, 2022
+[]
+08:46AM on April 29, 2022
+[]
+08:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.34}, {"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 32.46}]
+08:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.13}]
+08:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.7901}]
+08:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 23.73}]
+08:47AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 34.56}]
+08:47AM on April 29, 2022
+[]
+08:51AM on April 29, 2022
+[]
+08:51AM on April 29, 2022
+[]
+08:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 23.81}]
+08:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 32.35}, {"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.765}, {"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.1}]
+08:51AM on April 29, 2022
+[]
+08:52AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 34.69}]
+08:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.81}]
+08:56AM on April 29, 2022
+[]
+08:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 23.6101}]
+08:56AM on April 29, 2022
+[]
+08:56AM on April 29, 2022
+[]
+08:57AM on April 29, 2022
+[]
+09:01AM on April 29, 2022
+[]
+09:01AM on April 29, 2022
+[]
+09:01AM on April 29, 2022
+[]
+09:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NVAX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 48.44}]
+09:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.06}, {"datatype": "VSA", "symbol": "BTU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 23.51}]
+09:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 52.4862}, {"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.91}]
+09:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 9.14}]
+09:02AM on April 29, 2022
+[]
+09:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 52.99}]
+09:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 19.515}]
+09:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.695}]
+09:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NCR", "timeframe": "5Min", "vsa": 11, "cs": 4, "price": 35.8}, {"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.01}]
+09:06AM on April 29, 2022
+[]
+09:07AM on April 29, 2022
+[]
+09:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NCR", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 35.81}]
+09:11AM on April 29, 2022
+[]
+09:11AM on April 29, 2022
+[]
+09:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.275}]
+09:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.185}]
+09:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.035}]
+09:12AM on April 29, 2022
+[]
+09:16AM on April 29, 2022
+[]
+09:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.175}]
+09:16AM on April 29, 2022
+[]
+09:16AM on April 29, 2022
+[]
+09:16AM on April 29, 2022
+[]
+09:16AM on April 29, 2022
+[]
+09:17AM on April 29, 2022
+[]
+09:21AM on April 29, 2022
+[]
+09:21AM on April 29, 2022
+[]
+09:21AM on April 29, 2022
+[]
+09:21AM on April 29, 2022
+[]
+09:21AM on April 29, 2022
+[]
+09:21AM on April 29, 2022
+[]
+09:22AM on April 29, 2022
+[]
+09:26AM on April 29, 2022
+[]
+09:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 11, "cs": 4, "price": 5.205}]
+09:26AM on April 29, 2022
+[]
+09:26AM on April 29, 2022
+[]
+09:26AM on April 29, 2022
+[]
+09:26AM on April 29, 2022
+[]
+09:27AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ATER", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.05}]
+09:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.49}, {"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.34}]
+09:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.8}]
+09:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TELL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.175}]
+09:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BILI", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 24.99}]
+09:31AM on April 29, 2022
+[]
+09:31AM on April 29, 2022
+[]
+09:31AM on April 29, 2022
+[]
+09:32AM on April 29, 2022
+[]
+09:36AM on April 29, 2022
+[]
+09:36AM on April 29, 2022
+[]
+09:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.46}]
+09:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.76}]
+09:36AM on April 29, 2022
+[]
+09:37AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.14}, {"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.795}]
+09:41AM on April 29, 2022
+[]
+09:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.52}]
+09:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.8399}]
+09:41AM on April 29, 2022
+[]
+09:42AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 9, "price": 8.68}]
+09:42AM on April 29, 2022
+[]
+09:46AM on April 29, 2022
+[]
+09:46AM on April 29, 2022
+[]
+09:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.7165}]
+09:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NVTA", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.35}]
+09:46AM on April 29, 2022
+[]
+09:47AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NCR", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 35.1931}]
+09:47AM on April 29, 2022
+[]
+09:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NCR", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 35.13}]
+09:51AM on April 29, 2022
+[]
+09:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "FRGE", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.46}]
+09:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.69}]
+09:51AM on April 29, 2022
+[]
+09:51AM on April 29, 2022
+[]
+09:52AM on April 29, 2022
+[]
+09:56AM on April 29, 2022
+[]
+09:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "YMM", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.93}]
+09:56AM on April 29, 2022
+[]
+09:56AM on April 29, 2022
+[]
+09:56AM on April 29, 2022
+[]
+09:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.13}]
+09:56AM on April 29, 2022
+[]
+09:57AM on April 29, 2022
+[]
+10:01AM on April 29, 2022
+[]
+10:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TGTX", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 7.18}]
+10:01AM on April 29, 2022
+[]
+10:01AM on April 29, 2022
+[]
+10:01AM on April 29, 2022
+[]
+10:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NCR", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 35.6}]
+10:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.98}]
+10:02AM on April 29, 2022
+[]
+10:06AM on April 29, 2022
+[]
+10:06AM on April 29, 2022
+[]
+10:06AM on April 29, 2022
+[]
+10:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.65}]
+10:06AM on April 29, 2022
+[]
+10:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TGTX", "timeframe": "5Min", "vsa": 0, "cs": 9, "price": 7.21}]
+10:06AM on April 29, 2022
+[]
+10:07AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.9862}]
+10:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.58}]
+10:11AM on April 29, 2022
+[]
+10:11AM on April 29, 2022
+[]
+10:11AM on April 29, 2022
+[]
+10:11AM on April 29, 2022
+[]
+10:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.9199}, {"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.91}]
+10:11AM on April 29, 2022
+[]
+10:11AM on April 29, 2022
+[]
+10:12AM on April 29, 2022
+[]
+10:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TDOC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 34.72}, {"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.93}]
+10:16AM on April 29, 2022
+[]
+10:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.57}]
+10:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.91}]
+10:16AM on April 29, 2022
+[]
+10:16AM on April 29, 2022
+[]
+10:16AM on April 29, 2022
+[]
+10:16AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RIVN", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 31.23}]
+10:17AM on April 29, 2022
+[]
+10:21AM on April 29, 2022
+[]
+10:21AM on April 29, 2022
+[]
+10:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "WBD", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 18.47}]
+10:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.841}]
+10:21AM on April 29, 2022
+[]
+10:21AM on April 29, 2022
+[]
+10:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.9574}]
+10:22AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RBLX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 31.52}, {"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.13}]
+10:26AM on April 29, 2022
+[]
+10:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 29.695}]
+10:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.8001}]
+10:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VIXY", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.49}]
+10:26AM on April 29, 2022
+[]
+10:26AM on April 29, 2022
+[]
+10:26AM on April 29, 2022
+[]
+10:26AM on April 29, 2022
+[]
+10:31AM on April 29, 2022
+[]
+10:31AM on April 29, 2022
+[]
+10:31AM on April 29, 2022
+[]
+10:31AM on April 29, 2022
+[]
+10:31AM on April 29, 2022
+[]
+10:32AM on April 29, 2022
+[]
+10:36AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "OPNT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.1}]
+10:36AM on April 29, 2022
+[]
+10:36AM on April 29, 2022
+[]
+10:36AM on April 29, 2022
+[]
+10:36AM on April 29, 2022
+[]
+10:36AM on April 29, 2022
+[]
+10:36AM on April 29, 2022
+[]
+10:36AM on April 29, 2022
+[]
+10:37AM on April 29, 2022
+[]
+10:37AM on April 29, 2022
+[]
+10:41AM on April 29, 2022
+[]
+10:41AM on April 29, 2022
+[]
+10:41AM on April 29, 2022
+[]
+10:41AM on April 29, 2022
+[]
+10:41AM on April 29, 2022
+[]
+10:41AM on April 29, 2022
+[]
+10:41AM on April 29, 2022
+[]
+10:42AM on April 29, 2022
+[]
+10:42AM on April 29, 2022
+[]
+10:46AM on April 29, 2022
+[]
+10:46AM on April 29, 2022
+[]
+10:46AM on April 29, 2022
+[]
+10:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 12.17}]
+10:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.1999}]
+10:46AM on April 29, 2022
+[]
+10:46AM on April 29, 2022
+[]
+10:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.6801}]
+10:47AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "MARA", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.27}]
+10:51AM on April 29, 2022
+[]
+10:51AM on April 29, 2022
+[]
+10:51AM on April 29, 2022
+[]
+10:51AM on April 29, 2022
+[]
+10:51AM on April 29, 2022
+[]
+10:51AM on April 29, 2022
+[]
+10:51AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.205}]
+10:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "MARA", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 16.237}]
+10:56AM on April 29, 2022
+[]
+10:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.2324}]
+10:56AM on April 29, 2022
+[]
+11:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.61}]
+11:01AM on April 29, 2022
+[]
+11:01AM on April 29, 2022
+[]
+11:01AM on April 29, 2022
+[]
+11:01AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.1947}]
+11:01AM on April 29, 2022
+[]
+11:01AM on April 29, 2022
+[]
+11:02AM on April 29, 2022
+[]
+11:06AM on April 29, 2022
+[]
+11:06AM on April 29, 2022
+[]
+11:06AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.58}]
+11:06AM on April 29, 2022
+[]
+11:06AM on April 29, 2022
+[]
+11:06AM on April 29, 2022
+[]
+11:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RAPT", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 15.18}]
+11:11AM on April 29, 2022
+[]
+11:11AM on April 29, 2022
+[]
+11:11AM on April 29, 2022
+[]
+11:11AM on April 29, 2022
+[]
+11:11AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.6701}]
+11:11AM on April 29, 2022
+[]
+11:11AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:16AM on April 29, 2022
+[]
+11:17AM on April 29, 2022
+[]
+11:21AM on April 29, 2022
+[]
+11:21AM on April 29, 2022
+[]
+11:21AM on April 29, 2022
+[]
+11:21AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.21}]
+11:21AM on April 29, 2022
+[]
+11:21AM on April 29, 2022
+[]
+11:22AM on April 29, 2022
+[]
+11:26AM on April 29, 2022
+[]
+11:26AM on April 29, 2022
+[]
+11:26AM on April 29, 2022
+[]
+11:26AM on April 29, 2022
+[]
+11:26AM on April 29, 2022
+[]
+11:26AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.77}, {"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.32}]
+11:26AM on April 29, 2022
+[]
+11:26AM on April 29, 2022
+[]
+11:27AM on April 29, 2022
+[]
+11:31AM on April 29, 2022
+[]
+11:31AM on April 29, 2022
+[]
+11:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.795}]
+11:31AM on April 29, 2022
+[]
+11:31AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VERU", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 12.0155}]
+11:31AM on April 29, 2022
+[]
+11:31AM on April 29, 2022
+[]
+11:31AM on April 29, 2022
+[]
+11:32AM on April 29, 2022
+[]
+11:32AM on April 29, 2022
+[]
+11:36AM on April 29, 2022
+[]
+11:36AM on April 29, 2022
+[]
+11:36AM on April 29, 2022
+[]
+11:36AM on April 29, 2022
+[]
+11:36AM on April 29, 2022
+[]
+11:36AM on April 29, 2022
+[]
+11:37AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.49}]
+11:41AM on April 29, 2022
+[]
+11:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 11.785}]
+11:41AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 10.0727}]
+11:41AM on April 29, 2022
+[]
+11:41AM on April 29, 2022
+[]
+11:41AM on April 29, 2022
+[]
+11:41AM on April 29, 2022
+[]
+11:42AM on April 29, 2022
+[]
+11:46AM on April 29, 2022
+[]
+11:46AM on April 29, 2022
+[]
+11:46AM on April 29, 2022
+[]
+11:46AM on April 29, 2022
+[]
+11:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.74}]
+11:46AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.085}]
+11:46AM on April 29, 2022
+[]
+11:46AM on April 29, 2022
+[]
+11:47AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.519}, {"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 11.75}]
+11:51AM on April 29, 2022
+[]
+11:51AM on April 29, 2022
+[]
+11:51AM on April 29, 2022
+[]
+11:51AM on April 29, 2022
+[]
+11:52AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.75}, {"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.085}]
+11:56AM on April 29, 2022
+[]
+11:56AM on April 29, 2022
+[]
+11:56AM on April 29, 2022
+[]
+11:56AM on April 29, 2022
+[]
+11:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 11.66}]
+11:56AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.21}]
+11:56AM on April 29, 2022
+[]
+11:57AM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.35}]
+12:01PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.32}]
+12:01PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "PTON", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 17.805}, {"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.18}, {"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.02}]
+12:01PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 8.735}]
+12:01PM on April 29, 2022
+[]
+12:01PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 11.75}]
+12:01PM on April 29, 2022
+[]
+12:01PM on April 29, 2022
+[]
+12:01PM on April 29, 2022
+[]
+12:02PM on April 29, 2022
+[]
+12:06PM on April 29, 2022
+[]
+12:06PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.35}]
+12:06PM on April 29, 2022
+[]
+12:06PM on April 29, 2022
+[]
+12:06PM on April 29, 2022
+[]
+12:06PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ATUS", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 9.405}]
+12:06PM on April 29, 2022
+[]
+12:07PM on April 29, 2022
+[]
+12:11PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "ACCD", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.835}]
+12:11PM on April 29, 2022
+[]
+12:11PM on April 29, 2022
+[]
+12:11PM on April 29, 2022
+[]
+12:11PM on April 29, 2022
+[]
+12:11PM on April 29, 2022
+[]
+12:11PM on April 29, 2022
+[]
+12:12PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.345}]
+12:16PM on April 29, 2022
+[]
+12:16PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.66}]
+12:16PM on April 29, 2022
+[]
+12:16PM on April 29, 2022
+[]
+12:16PM on April 29, 2022
+[]
+12:16PM on April 29, 2022
+[]
+12:17PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.3399}]
+12:17PM on April 29, 2022
+[]
+12:21PM on April 29, 2022
+[]
+12:21PM on April 29, 2022
+[]
+12:21PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.03}, {"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.1}]
+12:21PM on April 29, 2022
+[]
+12:21PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.2516}]
+12:21PM on April 29, 2022
+[]
+12:21PM on April 29, 2022
+[]
+12:22PM on April 29, 2022
+[]
+12:22PM on April 29, 2022
+[]
+12:26PM on April 29, 2022
+[]
+12:26PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.8296}, {"datatype": "VSA", "symbol": "ACCD", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.7}, {"datatype": "VSA", "symbol": "HL", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 5.235}]
+12:26PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CYN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.2766}]
+12:26PM on April 29, 2022
+[]
+12:26PM on April 29, 2022
+[]
+12:27PM on April 29, 2022
+[]
+12:31PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 21, "price": 7.18}]
+12:31PM on April 29, 2022
+[]
+12:31PM on April 29, 2022
+[]
+12:31PM on April 29, 2022
+[]
+12:31PM on April 29, 2022
+[]
+12:31PM on April 29, 2022
+[]
+12:32PM on April 29, 2022
+[]
+12:36PM on April 29, 2022
+[]
+12:36PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 10.2329}]
+12:36PM on April 29, 2022
+[]
+12:36PM on April 29, 2022
+[]
+12:36PM on April 29, 2022
+[]
+12:36PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VERU", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 11.61}]
+12:36PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "CWEB", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.89}, {"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.035}]
+12:36PM on April 29, 2022
+[]
+12:41PM on April 29, 2022
+[]
+12:41PM on April 29, 2022
+[]
+12:41PM on April 29, 2022
+[]
+12:41PM on April 29, 2022
+[]
+12:41PM on April 29, 2022
+[]
+12:41PM on April 29, 2022
+[]
+12:41PM on April 29, 2022
+[]
+12:42PM on April 29, 2022
+[]
+12:46PM on April 29, 2022
+[]
+12:46PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.995}]
+12:46PM on April 29, 2022
+[]
+12:46PM on April 29, 2022
+[]
+12:46PM on April 29, 2022
+[]
+12:46PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "KOLD", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.665}]
+12:46PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 10.255}]
+12:46PM on April 29, 2022
+[]
+12:47PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.27}]
+12:51PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VERU", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 11.595}]
+12:51PM on April 29, 2022
+[]
+12:51PM on April 29, 2022
+[]
+12:51PM on April 29, 2022
+[]
+12:51PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 11, "cs": 4, "price": 7.005}]
+12:51PM on April 29, 2022
+[]
+12:51PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.12}]
+12:51PM on April 29, 2022
+[]
+12:52PM on April 29, 2022
+[]
+12:56PM on April 29, 2022
+[]
+12:56PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "OPEN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.99}]
+12:56PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.785}]
+12:56PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VERU", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 11.718}, {"datatype": "VSA", "symbol": "ATUS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 9.295}]
+12:57PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.0341}]
+12:57PM on April 29, 2022
+[]
+01:01PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "BRCC", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 14.9}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.91}, {"datatype": "VSA", "symbol": "SEER", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.28}, {"datatype": "VSA", "symbol": "NKTX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.44}, {"datatype": "VSA", "symbol": "SST", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 12.64}, {"datatype": "VSA", "symbol": "VAXX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.96}]
+01:02PM on April 29, 2022
+[]
+01:06PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "YMM", "timeframe": "5Min", "vsa": 11, "cs": 4, "price": 6.19}]
+01:06PM on April 29, 2022
+[]
+01:06PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 5, "price": 5.81}]
+01:06PM on April 29, 2022
+[]
+01:11PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 18.04}]
+01:11PM on April 29, 2022
+[]
+01:11PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "SOXL", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 22.4601}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.85}]
+01:16PM on April 29, 2022
+[]
+01:16PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.9799}]
+01:21PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 5.84}]
+01:21PM on April 29, 2022
+[]
+01:26PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 5, "price": 5.85}]
+01:31PM on April 29, 2022
+[]
+01:41PM on April 29, 2022
+[]
+01:56PM on April 29, 2022
+[{"datatype": "VSA", "symbol": "TQQQ", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 36.67}]
