@@ -1,7 +1,6 @@
 import json
 import pandas as pd
 
-
 class Util:
     minMaxRangePercent = 0.06
     minMaxNearPercent = 0.04
@@ -21,7 +20,6 @@ class Util:
             3, Util.minMaxPricePercentSlope, 200, Util.minMaxPricePercentSlope/3, close)
         return data1
 
-
     @staticmethod
     def IsSameSign(number1: float, number2: float):
         if number1 > 0 and number2 > 0:
@@ -30,3 +28,6 @@ class Util:
             return True
         return False
 
+    @staticmethod
+    def DistanceSlope(distance: int) -> float:
+        return Util.slope(3, 1, 20, 0.3, distance)

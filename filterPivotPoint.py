@@ -51,66 +51,10 @@ class LoadPivotPoints:
 
 
 class FilterPivotPoint:
-    def __init__(self, marketOpenAt=None):
-        self.marketOpenAt = TimeStamp.getMarketOpenTimestamp(
-        ) if marketOpenAt is None else marketOpenAt
-        self.minMaxRangePercent = 0.06
-        self.minMaxNearPercent = 0.04
-        self.hash = PivotPointStack()
-        self.fMinmax = TightMinMax(tightMinMaxN=5)
-
-    def IsItReady(self, pivot:dict, dataf: pd.DataFrame, close: float) -> bool:
-        highest = dataf['High'].loc[dataf['High'].idxmax()]
-        # Minimum in column
-        lowest = dataf['Low'].loc[dataf['Low'].idxmin()]
-        # if the stock crosses the pivot, return false
-        if highest >= pivot['pp'] >= lowest:
-            return False
-        # if spread is not enough
-        if not FilterPriceSpread.IsPriceSpread(highest, pivot['pp'], 0.04) and not FilterPriceSpread.IsPriceSpread(lowest, pivot['pp'], 0.04):
-            return False
-        # if first point:
-        openingClose = dataf.iloc[-1]['Close']
-        if not FilterPriceSpread.IsNearPrice(openingClose, pivot['pp'], 0.03):
-            return False
-        if FilterPriceSpread.IsNearPrice(close, pivot['pp'], 0.03):
-            return False
-        # isOk, peaks = self.fMinmax.Run(dataf[::-1])
-        # if len(peaks) % 2 == 0:
-        #     return False
-        return True
-
-    def IsPivotPointInPlay(self, pivot: dict, dataf: pd.DataFrame, close: float) -> bool:
-        _, keypoints = self.fMinmax.Run(dataf[::-1], isRemoveRepeatMinMaxOnly=True)
-        if len(keypoints) > 0 and len(keypoints) % 2 == 1:
-            return True
-        return False
-    
-    def Run(self, symbol: str, dataf: pd.DataFrame, close: float) -> bool:
-        try:
-            dataf = dataf[dataf['Date'] >= self.marketOpenAt]
-            # less than 15 minutes into the market.  too early.
-            if len(dataf) < 3:
-                return False
-            pivot = self.hash.Get(symbol)
-            if pivot is None:
-                return False
-            if self.IsItReady(pivot, dataf, close):
-                return self.IsPivotPointInPlay(pivot, dataf, close)
-            return False
-        except Exception as ex:
-            logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
-            return False
-#
-
-
-class FilterCenterPivot:
 
     def __init__(self, marketOpenAt=None):
-        self.marketOpenAt = TimeStamp.getMarketOpenTimestamp(
-        ) if marketOpenAt is None else marketOpenAt
-        self.minMaxRangePercent = 0.06
-        self.minMaxNearPercent = 0.04
+        self.takeoffSlope = 0.10
+        self.minMaxNearPercent = 0.03
         self.hash = PivotPointStack()
         self.fMinmax = TightMinMax(tightMinMaxN=5)
 
@@ -124,24 +68,35 @@ class FilterCenterPivot:
         takeOffSlopes = []
         for idx, row in df.iterrows():
             if not lastRow is None:
-                slope = (row['Close'] - lastRow['Close']) / (row['x'] - lastRow['x'])
+                slope = (row['Close'] - lastRow['Close']) / \
+                    (row['x'] - lastRow['x'])
                 standardSlope = slope * Util.SlopeOfPrice(close)
                 takeOffSlopes.append(abs(standardSlope))
-            else:
-                takeOffSlopes.append(0)
             lastRow = row
-        df = df.assign(Takeoff = takeOffSlopes)
+        if len(df) > 0:
+            takeOffSlopes.append(0)
+        df = df.assign(Takeoff=takeOffSlopes)
         return df
 
-    def IsInPlay(self, pivot: dict, dataf: pd.DataFrame, close: float) -> bool:
+    def IsPivotPointCenter(self, pivot: dict, dataf: pd.DataFrame, close: float) -> bool:
+        close = dataf.iloc[0]['Close']
         if self.IsItReady(pivot, dataf, close):
-            isFirstMin, df = self.fMinmax.Run(dataf)
-            df1 = self.beforeAndAfterSlope(df, close)
+            isPtMin, keypoints = self.fMinmax.Run(dataf)
+            keypoints: pd.DataFrame = self.beforeAndAfterSlope(
+                keypoints, close)
+            firstMinMax = keypoints.iloc[0]
+            if FilterPriceSpread.IsNearPrice(pivot['pp'], firstMinMax['Close'], self.minMaxNearPercent):
+                distance = 1
+                if len(keypoints) > 1:
+                    distance = abs(keypoints.iloc[1].x - keypoints.iloc[0].x)
+                takeoff = firstMinMax['Takeoff'] / Util.DistanceSlope(distance)
+                if takeoff > self.takeoffSlope:
+                    return True
         return False
     
     def Run(self, symbol: str, dataf: pd.DataFrame, close: float, isDebug:bool = None) -> bool:
         try:
-            dataf = dataf[dataf['Date'] >= self.marketOpenAt]
+            close = dataf.iloc[0]['Close']
             # less than 15 minutes into the market.  too early.
             if len(dataf) < 3:
                 return False
@@ -149,10 +104,7 @@ class FilterCenterPivot:
             if pivot is None:
                 return False
             if self.IsItReady(pivot, dataf, close):
-                return self.IsPivotPointInPlay(pivot, dataf, close)
-            isFirstMin, df = self.fMinmax.Run(dataf)
-            df1 = self.beforeAndAfterSlope(df, close)
-            return False
+                return self.IsPivotPointCenter(pivot, dataf, close)
         except Exception as ex:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
             return False
