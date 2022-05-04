@@ -5,6 +5,10 @@ from filterAbcdPattern import FilterAbcdPattern
 from testUtil import TestUtil
 from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 from alpacaHistorical import TimePeriod
+from util import Util
+from tightMinMax import TightMinMax
+from localMinMax import LocalMinMax
+
 
 class TestFilterAbcdPattern(unittest.TestCase):
 
@@ -94,3 +98,31 @@ class TestFilterAbcdRealData(unittest.TestCase):
         result = abcd.Run('TQQQ', df, 0)
         self.assertTrue(result)
 
+
+    def testAbcdRealData_04(self):
+        symbol = 'BWV'
+        onedate = '2022-05-03'
+        startt = '11:30:00'
+        endt = '19:00:00'
+        starttime = f'{onedate}T{startt}Z'
+        endtime = f'{onedate}T{endt}Z'
+        timeframe = TimePeriod.Min5.value
+        app = AlpacaHistoricalBarData(symbol, starttime, endtime, timeframe)
+        isOk, df = app.GetDataFrame()        
+        abcd = FilterAbcdPattern()
+        result = abcd.Run(symbol, df, 0)
+        self.assertTrue(result)
+
+    def testAbcdRealData_05(self):
+        symbol = 'BWV'
+        onedate = '2022-05-03'
+        startt = '11:30:00'
+        endt = '19:00:00'
+        starttime = f'{onedate}T{startt}Z'
+        endtime = f'{onedate}T{endt}Z'
+        timeframe = TimePeriod.Min15.value
+        app = AlpacaHistoricalBarData(symbol, starttime, endtime, timeframe)
+        isOk, df = app.GetDataFrame()        
+        abcd = FilterAbcdPattern()
+        result = abcd.Run(symbol, df, 0)
+        self.assertFalse(result)

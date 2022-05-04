@@ -116,11 +116,11 @@ class volumeSpreadAnalysis:
         v3 = volumes[ix+2]
         v4 = volumes[ix+3]
         # down thrust
-        if abs(s2) < 0.2 and v2 > 3 and not self.isSameSign(s1, s2):
+        if abs(s2) < 0.3 and v2 > 2.5 and not self.isSameSign(s1, s2) and self.isSameSignal(s2, s3) and self.isSameSignal(s2, s4):
             if self.localMinMax(df, 1, 4):
                 return 1
         # selling climax
-        if abs(s2) > 3 and v2 > 3 and not self.isSameSign(s1, s2) and abs(s2) > abs(s1):
+        if abs(s2) > 4 and v2 > 2.5 and not self.isSameSign(s1, s2) and abs(s2) > abs(s1) and self.isSameSign(s2, s3) and self.isSameSign(s2, s4):
             if self.localMinMax(df, 1, 4):
                 return 2
 

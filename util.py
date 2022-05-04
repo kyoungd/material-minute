@@ -31,3 +31,40 @@ class Util:
     @staticmethod
     def DistanceSlope(distance: int) -> float:
         return Util.slope(3, 1, 20, 0.3, distance)
+
+    @staticmethod
+    def StandardPrice(price: float) -> float:
+        return price * Util.slope(3, 3, 300, 0.3, price)
+
+    @staticmethod
+    def StandarizePriceDf(df: pd.DataFrame) -> pd.DataFrame:
+        df['Close'] = df['Close'].apply(Util.StandardPrice)
+        df['Open'] = df['Open'].apply(Util.StandardPrice)
+        df['High'] = df['High'].apply(Util.StandardPrice)
+        df['Low'] = df['Low'].apply(Util.StandardPrice)
+        return df
+
+    @staticmethod
+    def IsEnoughSpread(df: pd.DataFrame, spread:float = None):
+        spread = Util.minMaxRangePercent if spread is None else spread
+        iMax = df['High'].idxmax()
+        iMin = df['Low'].idxmin()
+        high = df.iloc[iMax]['High']
+        low = df.iloc[iMin]['Low']
+        return Util.IsPriceSpread(high, low, spread)
+
+    @staticmethod
+    def IsPriceSpread(price1: float, price2: float, spread: float = None) -> bool:
+        spread = Util.minMaxRangePercent if spread is None else spread
+        spreadPrice = spread * (price1 + price2) / 2.0
+        if abs(price1 - price2) >= spreadPrice:
+            return True
+        return False
+
+    @staticmethod
+    def IsNearPrice(close1: float, close2: float, spread:float = None) -> bool:
+        spread = Util.minMaxNearPercent if spread is None else spread
+        priceDelta = spread * (close1 + close2) / 2
+        if abs(close2 - close1) <= abs(priceDelta):
+            return True
+        return False

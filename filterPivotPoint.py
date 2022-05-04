@@ -92,6 +92,8 @@ class FilterPivotPoint:
                 takeoff = firstMinMax['Takeoff'] / Util.DistanceSlope(distance)
                 if takeoff > self.takeoffSlope:
                     return True
+                else: # kyd
+                    logging.info(f'filterPivotPoint: ${close:.2f} {takeoff:.2f}% ')
         return False
     
     def Run(self, symbol: str, dataf: pd.DataFrame, close: float, isDebug:bool = None) -> bool:

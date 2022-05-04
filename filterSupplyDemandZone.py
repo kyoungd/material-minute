@@ -85,8 +85,12 @@ class FilterDailySupplyDemandZone:
             firstkeys:list = self.firstKeyPoints(keypoints[::-1])
             for row in firstkeys[::-1]:
                 if FilterPriceSpread.IsNearPrice(row['Close'], close, self.minMaxNearPercent):
-                    if row['Takeoff'] >= self.takeoffSlope:
+                    takeoff = row['Takeoff']
+                    if takeoff >= self.takeoffSlope:
                         return True
+                    else:  # kyd
+                        logging.info(
+                            f'FilterDailySupplyDemandZone: ${close:.2f} {takeoff:.2f}% ')
             return False
         except Exception as ex:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')

@@ -4,7 +4,6 @@ from db import DB
 import logging
 from redisUtil import TimeStamp
 from tightMinMax import TightMinMax
-from filterPriceSpread import FilterPriceSpread
 from util import Util
 
 class FilterAbcdPattern:
@@ -14,7 +13,7 @@ class FilterAbcdPattern:
  
     def IsAbcdPattern(self, A:float, B: float, C: float, close) -> bool:
         if (B > A > C) or (B < A < C):
-            if FilterPriceSpread.IsNearPrice(B, close):
+            if Util.IsNearPrice(B, close):
                 return True
         return False
 
@@ -37,8 +36,9 @@ class FilterAbcdPattern:
         
     def Run(self, symbol:str, dataf: pd.DataFrame, close: float) -> bool:
         try:
-            close = dataf.iloc[0]['Close']
-            isFirstMin, df = self.fMinmax.Run(dataf)
+            df1 = Util.StandarizePriceDf(dataf)
+            close = df1.iloc[0]['Close']
+            isFirstMin, df = self.fMinmax.Run(df1)
             if len(df) >= 3 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[1]['Close'], df.iloc[2]['Close'], close):
                 return True
             if len(df) >= 5 and self.IsAbcdPattern(df.iloc[0]['Close'], df.iloc[1]['Close'], df.iloc[4]['Close'], close):

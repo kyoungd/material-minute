@@ -17,17 +17,15 @@ class TightMinMax:
     def getRangeMax(self, df):
         rows = []
         for _, row in df.iterrows():
-            open = row['Open']
-            close = row['Close']
-            rows.append(open if open > close else close)
+            data = max(row['Open'], row['Close'])
+            rows.append(data)
         return rows
 
     def getRangeMin(self, df):
         rows = []
         for _, row in df.iterrows():
-            open = row['Open']
-            close = row['Close']
-            rows.append(open if open < close else close)
+            data = min(row['Open'], row['Close'])
+            rows.append(data)
         return rows
 
     def minMaxItem(self, idx:int, onedate:str, close:float, onetype:str):

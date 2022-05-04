@@ -5,3 +5,4 @@ echo 'config get maxmemory'
 echo 'config set maxmemory 4GB'
 echo 'config get maxmemory'
 
+echo 'sudo service redis-server stop'
