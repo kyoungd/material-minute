@@ -22,12 +22,14 @@ def ThreadRun():
     while 1:
         time.sleep(1)
 
-def RealtimeApp():
+def RealtimeApp(isDebug=None):
+    isDebug = False if isDebug is None else isDebug
     preprocessing = LoadPivotPoints()
     preprocessing.Run()
     
-    p01 = Process(target=RealTimeData)
-    p01.start()
+    if not isDebug:
+        p01 = Process(target=RealTimeData)
+        p01.start()
     p02 = Process(target=ThreadRun)
     p02.start()
     while 1:
@@ -50,6 +52,8 @@ if __name__ == "__main__":
             tables = TimeseriesTable()
             tables.run()
         elif (args[0] == "--test"):
+            RealtimeApp(isDebug=False)
+        else:
             RealtimeApp()
     else:
         SetInterval(60, RunApp)

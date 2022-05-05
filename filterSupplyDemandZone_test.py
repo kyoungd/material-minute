@@ -1,15 +1,14 @@
-from datetime import datetime, timedelta
 import unittest
 import pandas as pd
-from testUtil import TestUtil
+from util import TestUtil
 from filterSupplyDemandZone import FilterDailySupplyDemandZone
-from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 from alpacaHistorical import TimePeriod
 
 class TestFilterSupplyDemandZone(unittest.TestCase):
 
     def setUp(self) -> None:
         self.app = FilterDailySupplyDemandZone()
+
 
     def testSupplyDemand_01(self):
         seed = [113, 114, 115,
@@ -46,72 +45,44 @@ class TestFilterSupplyDemandZone(unittest.TestCase):
 
 
 class TestFilterSupplyDemandRealData(unittest.TestCase):
-    
-    # 2022/04/29 7:30 AM - 12:45 PM EST
-    def testSupplyDemandReal_01(self):
-        app = AlpacaHistoricalBarData(
-            'TQQQ', '2022-04-27T11:30:00Z',
-            '2022-04-27T16:45:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
+
+    def executeApp(self, symbol, endDate, endHour, endMinute, timeframe):
+        isOk, df = TestUtil.getRealtimeData(
+            symbol, endDate, endHour, endMinute, timeframe)
         sd = FilterDailySupplyDemandZone()
-        result = sd.Run('TQQQ', df, 0)
+        return sd.Run(symbol, df, 0)
+
+    def testSupplyDemandReal_01(self):
+        result = self.executeApp('TQQQ', '2022-04-27', 9, 45, TimePeriod.Min15.value)
         self.assertTrue(result)
 
 
     # 2022/04/28 7:30 AM - 3:00 PM EST
     def testSupplyDemandReal_02(self):
-        app = AlpacaHistoricalBarData(
-            'RIOT', '2022-04-28T11:30:00Z',
-            '2022-04-28T18:45:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
-        sd = FilterDailySupplyDemandZone()
-        result = sd.Run('RIOT', df, 0)
-        self.assertTrue(result)
-
-
-    # 2022/04/28 7:30 AM - 3:00 PM EST
-    def testSupplyDemandReal_03(self):
-        app = AlpacaHistoricalBarData(
-            'RIOT', '2022-04-28T11:30:00Z',
-            '2022-04-28T18:45:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
-        sd = FilterDailySupplyDemandZone()
-        result = sd.Run('RIOT', df, 0)
-        self.assertTrue(result)
-
-
-    # 2022/04/28 7:30 AM - 3:00 PM EST
-    def testSupplyDemandReal_03(self):
-        app = AlpacaHistoricalBarData(
-            'RIOT', '2022-04-28T11:30:00Z',
-            '2022-04-28T18:45:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
-        sd = FilterDailySupplyDemandZone()
-        result = sd.Run('RIOT', df, 0)
+        result = self.executeApp('RIOT', '2022-04-28',
+                                 11, 45, TimePeriod.Min15.value)
         self.assertTrue(result)
 
 
     # 2022/04/28 4:30 AM - 10:30 AM PST
     def testSupplyDemandReal_04(self):
-        app = AlpacaHistoricalBarData(
-            'RIOT', '2022-04-28T11:30:00Z',
-            '2022-04-28T17:30:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
-        sd = FilterDailySupplyDemandZone()
-        result = sd.Run('RIOT', df, 0)
+        result = self.executeApp('RIOT', '2022-04-28',
+                                 10, 30, TimePeriod.Min15.value)
         self.assertFalse(result)
-
 
 
     # 2022/04/28 4:30 AM - 9:45 AM PST
     def testSupplyDemandReal_05(self):
-        symbol = 'WBD'
-        starttime = '2022-04-28T11:30:00Z'
-        endtime = '2022-04-28T16:45:00Z'
-        timeframe = TimePeriod.Min15.value
-        app = AlpacaHistoricalBarData(symbol, starttime, endtime, timeframe)
-        isOk, df = app.GetDataFrame()
-        sd = FilterDailySupplyDemandZone()
-        result = sd.Run('RIOT', df, 0)
+        result = self.executeApp('WBD', '2022-04-28',
+                                 11, 45, TimePeriod.Min15.value)
         self.assertTrue(result)
 
+
+    def testSupplyDemandReal_06(self):
+        result = self.executeApp('RDBX', '2022-05-04', 12, 30, TimePeriod.Min15.value)
+        self.assertTrue(result)
+
+
+    def testSupplyDemandReal_07(self):
+        result = self.executeApp('RVLV', '2022-05-02', 10, 45, TimePeriod.Min15.value)
+        self.assertTrue(result)

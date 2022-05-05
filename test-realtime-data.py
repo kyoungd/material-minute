@@ -78,6 +78,12 @@ def create5MinBars(symbol):
     bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
     bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
     bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
+    change = 0.40
+    bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
+    bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
+    bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
+    bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
+    bars5Min.append(barData(open, close, high, low, 2700000, symbol, change))
 
 
 def getNext5MinBar(symbol):
@@ -148,7 +154,7 @@ def MinInterval(symbol, period):
 
 if __name__ == '__main__':
     symbol = "FANG"
-    period = "2MIN"
+    period = "5MIN"
 
     args = sys.argv[1:]
     if len(args) > 0 and (args[0] == "-t" or args[0] == "-table"):

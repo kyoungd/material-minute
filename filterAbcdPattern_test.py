@@ -1,13 +1,9 @@
-from datetime import datetime, timedelta
 import unittest
 import pandas as pd
 from filterAbcdPattern import FilterAbcdPattern
 from testUtil import TestUtil
-from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 from alpacaHistorical import TimePeriod
-from util import Util
-from tightMinMax import TightMinMax
-from localMinMax import LocalMinMax
+from util import TestUtil
 
 
 class TestFilterAbcdPattern(unittest.TestCase):
@@ -65,64 +61,54 @@ class TestFilterAbcdPattern(unittest.TestCase):
 
 class TestFilterAbcdRealData(unittest.TestCase):
 
+    def executeApp(self, symbol:str, endDate:str, endHour:int, endMinute:int, timeframe:str):
+        isOk, df = TestUtil.getRealtimeData(
+            symbol, endDate, endHour, endMinute, timeframe)
+        abcd = FilterAbcdPattern()
+        return abcd.Run(symbol, df, 0)
+
     # 2022/04/29 7:30 AM - 12:15 AM EST
     def testAbcdRealData_01(self):
-        app = AlpacaHistoricalBarData(
-            'WBD', '2022-04-29T11:30:00Z',
-            '2022-04-29T16:15:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
-        abcd = FilterAbcdPattern()
-        result = abcd.Run('WBD', df, 0)
-        # print(df)
+        result = self.executeApp('WBD', '2022-04-29',
+                                 11, 15, TimePeriod.Min15.value)
         self.assertTrue(result)
         
 
     def testAbcdRealData_02(self):
-        app = AlpacaHistoricalBarData(
-            'RIOT', '2022-04-28T11:30:00Z',
-            '2022-04-28T16:30:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
-        abcd = FilterAbcdPattern()
-        result = abcd.Run('RIOT', df, 0)
+        result = self.executeApp('RIOT', '2022-04-28',
+                                 11, 30, TimePeriod.Min15.value)
         self.assertTrue(result)
 
         
 
     # 2022/04/28 7:30 AM - 12:00 AM EST
     def testAbcdRealData_03(self):
-        app = AlpacaHistoricalBarData(
-            'TQQQ', '2022-04-28T11:30:00Z',
-            '2022-04-28T16:00:00Z', TimePeriod.Min15.value)
-        isOk, df = app.GetDataFrame()
-        abcd = FilterAbcdPattern()
-        result = abcd.Run('TQQQ', df, 0)
+        result = self.executeApp('TQQQ', '2022-04-28',
+                                 9, 00, TimePeriod.Min15.value)
         self.assertTrue(result)
 
 
     def testAbcdRealData_04(self):
-        symbol = 'BWV'
-        onedate = '2022-05-03'
-        startt = '11:30:00'
-        endt = '19:00:00'
-        starttime = f'{onedate}T{startt}Z'
-        endtime = f'{onedate}T{endt}Z'
-        timeframe = TimePeriod.Min5.value
-        app = AlpacaHistoricalBarData(symbol, starttime, endtime, timeframe)
-        isOk, df = app.GetDataFrame()        
-        abcd = FilterAbcdPattern()
-        result = abcd.Run(symbol, df, 0)
+        result = self.executeApp('BWV', '2022-05-03',
+                                 12, 0, TimePeriod.Min5.value)
         self.assertTrue(result)
 
     def testAbcdRealData_05(self):
-        symbol = 'BWV'
-        onedate = '2022-05-03'
-        startt = '11:30:00'
-        endt = '19:00:00'
-        starttime = f'{onedate}T{startt}Z'
-        endtime = f'{onedate}T{endt}Z'
-        timeframe = TimePeriod.Min15.value
-        app = AlpacaHistoricalBarData(symbol, starttime, endtime, timeframe)
-        isOk, df = app.GetDataFrame()        
-        abcd = FilterAbcdPattern()
-        result = abcd.Run(symbol, df, 0)
+        result = self.executeApp('BWV', '2022-05-03',
+                                 12, 0, TimePeriod.Min15.value)
         self.assertFalse(result)
+
+    def testAbcdRealData_06(self):
+        result = self.executeApp('CHGG', '2022-05-04',
+                                 12, 25, TimePeriod.Min5.value)
+        self.assertTrue(result)
+
+    def testAbcdRealData_07(self):
+        result = self.executeApp('CHGG', '2022-05-04',
+                                 8, 15, TimePeriod.Min5.value)
+        self.assertTrue(result)
+
+    def testAbcdRealData_08(self):
+        result = self.executeApp('CHGG', '2022-05-04',
+                                 12, 0, TimePeriod.Min15.value)
+        self.assertTrue(result)

@@ -28,16 +28,15 @@ class EventBarHandleRealtimeData:
     def isTimeInterval(self, timeframe:str) -> bool:
         timeIntervals = {
             # RedisTimeFrame.MIN2: 2,
-            # RedisTimeFrame.MIN5: 5,
+            RedisTimeFrame.MIN5: 5,
             RedisTimeFrame.MIN15: 15
         }
         min = timeIntervals.get(timeframe, -1)
         if min <= 0:
             return False
         moment = datetime.datetime.now()
-        # for the minute 5 data, you have to be at minute 6.
-        # so you need to compensate for that.
-        if moment.minute % min == 1:
+        # kyd time-interval
+        if moment.minute % min == 0:
             return True
         return False
 

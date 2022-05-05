@@ -207,12 +207,13 @@ class RealTimeBars:
         try:
             ts = data['t']
             # seconds2021 = 1609488000
+            # kyd time-interval
             symbol = data['S']
-            if ts % RealTimeBars.getBackSeconds(RedisTimeFrame.MIN2) == 1:
+            if ts % RealTimeBars.getBackSeconds(RedisTimeFrame.MIN2) == 0:
                 self.redisAddBarAggregate(symbol, RedisTimeFrame.MIN2, ts)
-            if ts % RealTimeBars.getBackSeconds(RedisTimeFrame.MIN5) == 4:
+            if ts % RealTimeBars.getBackSeconds(RedisTimeFrame.MIN5) == 0:
                 self.redisAddBarAggregate(symbol, RedisTimeFrame.MIN5, ts)
-            if ts % RealTimeBars.getBackSeconds(RedisTimeFrame.MIN15) == 14:
+            if ts % RealTimeBars.getBackSeconds(RedisTimeFrame.MIN15) == 0:
                 self.redisAddBarAggregate(symbol, RedisTimeFrame.MIN15, ts)
         except Exception as e:
             logging.error(f'RedisAddBarAggregation: {e} {data} ')

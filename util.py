@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 
 class Util:
     minMaxRangePercent = 0.06
@@ -68,3 +69,15 @@ class Util:
         if abs(close2 - close1) <= abs(priceDelta):
             return True
         return False
+
+
+class TestUtil:
+
+    @staticmethod
+    def getRealtimeData(symbol:str, endDate:str, endHour:int, endMinute:int, timeframe:str):
+        starttime = f'{endDate}T11:30:00Z'
+        ehour = '{0:02d}'.format(endHour+7)
+        eminute = '{0:02d}'.format(endMinute)
+        endtime = f'{endDate}T{ehour}:{eminute}:00Z'
+        app = AlpacaHistoricalBarData(symbol, starttime, endtime, timeframe)
+        return app.GetDataFrame()

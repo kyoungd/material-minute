@@ -150,3 +150,381 @@
 [{"datatype": "VSA", "symbol": "LRCX", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 479.32}, {"datatype": "VSA", "symbol": "ORLY", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 610.65}, {"datatype": "VSA", "symbol": "PANW", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 571.95}, {"datatype": "VSA", "symbol": "CTAS", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 391.46}, {"datatype": "VSA", "symbol": "SBAC", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 337.88}, {"datatype": "VSA", "symbol": "MA", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 359.04}, {"datatype": "VSA", "symbol": "DXCM", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 407.14}]
 10:16AM on May 03, 2022
 [{"datatype": "VSA", "symbol": "DXCM", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 407.14}, {"datatype": "VSA", "symbol": "PSA", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 360.05}, {"datatype": "VSA", "symbol": "CTAS", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 391.46}, {"datatype": "VSA", "symbol": "LRCX", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 479.32}, {"datatype": "VSA", "symbol": "ORLY", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 610.65}, {"datatype": "VSA", "symbol": "BRK.B", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 316.405}, {"datatype": "VSA", "symbol": "MA", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 359.04}, {"datatype": "VSA", "symbol": "PANW", "timeframe": "15Min", "vsa": 0, "cs": 24, "price": 571.95}]
+03:45AM on May 04, 2022
+[]
+05:15AM on May 04, 2022
+[]
+05:30AM on May 04, 2022
+[]
+05:45AM on May 04, 2022
+[]
+06:00AM on May 04, 2022
+[]
+06:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "BRK.B", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 316.405}]
+06:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "BRK.B", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 316.405}]
+06:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "MA", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 359.04}, {"datatype": "VSA", "symbol": "ANTM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 497.11}, {"datatype": "VSA", "symbol": "PANW", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 571.95}, {"datatype": "VSA", "symbol": "PSA", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 360.05}, {"datatype": "VSA", "symbol": "BRK.B", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 316.405}]
+07:00AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CTAS", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 391.46}, {"datatype": "VSA", "symbol": "ANTM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 497.11}, {"datatype": "VSA", "symbol": "BRK.B", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 316.405}, {"datatype": "VSA", "symbol": "MA", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 359.04}, {"datatype": "VSA", "symbol": "PSA", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 360.05}, {"datatype": "VSA", "symbol": "PANW", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 571.95}, {"datatype": "VSA", "symbol": "DXCM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 407.14}]
+09:05AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "EXPE", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 143.34}]
+09:05AM on May 04, 2022
+[]
+09:05AM on May 04, 2022
+[]
+09:10AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.8487}, {"datatype": "VSA", "symbol": "SOUN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 12.48}]
+09:10AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "EXPE", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 143.99}]
+09:10AM on May 04, 2022
+[]
+09:15AM on May 04, 2022
+[]
+09:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.885}]
+09:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 11, "cs": 1, "price": 19.4096}]
+09:15AM on May 04, 2022
+[]
+09:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 143.34}]
+09:15AM on May 04, 2022
+[]
+09:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.1}]
+09:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.97}]
+09:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.39}]
+09:25AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "FRGE", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 29.5}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 21.0221}, {"datatype": "VSA", "symbol": "NUTX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.09}]
+09:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 33.56}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 17, "price": 11.95}]
+09:30AM on May 04, 2022
+[]
+09:30AM on May 04, 2022
+[]
+09:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CRWD", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 185.88}]
+09:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 143.807}, {"datatype": "VSA", "symbol": "ANDE", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 36.68}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 21.055}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 20.97}]
+09:30AM on May 04, 2022
+[]
+09:35AM on May 04, 2022
+[]
+09:35AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.0323}]
+09:40AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.995}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.81}]
+09:40AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 8.5}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 21.26}]
+09:45AM on May 04, 2022
+[]
+09:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 1, "price": 19.6166}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 12.2}]
+09:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.095}, {"datatype": "VSA", "symbol": "ANDE", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 36.72}]
+09:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 21.16}, {"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 145.66}]
+09:45AM on May 04, 2022
+[]
+09:50AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.851}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.95}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 21.175}]
+09:55AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.7856}]
+09:55AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 21.0}]
+09:55AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.02}]
+10:00AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.95}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 21.175}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 11, "cs": 0, "price": 7.72}]
+10:00AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "PRTS", "timeframe": "15Min", "vsa": 0, "cs": 1, "price": 8.39}]
+10:00AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 143.9978}, {"datatype": "VSA", "symbol": "ANDE", "timeframe": "15Min", "vsa": 0, "cs": 17, "price": 36.575}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 6.9162}]
+10:05AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.06}]
+10:05AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.89}]
+10:05AM on May 04, 2022
+[]
+10:10AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.1}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 27.38}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.7816}]
+10:10AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.835}]
+10:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 144.44}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.175}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 7.06}]
+10:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.545}]
+10:15AM on May 04, 2022
+[]
+10:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 27.35}]
+10:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.755}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.89}]
+10:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.77}]
+10:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 11.835}]
+10:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.7101}]
+10:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.1379}]
+10:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.845}]
+10:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 27.09}]
+10:20AM on May 04, 2022
+[]
+10:25AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.04}]
+10:25AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.585}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.01}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.83}]
+10:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "ENPH", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 186.685}, {"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 143.145}]
+10:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.03}]
+10:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.58}]
+10:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "ANDE", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 36.205}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.5099}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 11, "cs": 20, "price": 20.7101}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 21, "price": 11.81}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.225}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 11, "cs": 16, "price": 7.1379}]
+10:35AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.1749}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.065}]
+10:35AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.5343}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 12.065}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.685}]
+10:40AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 11, "cs": 20, "price": 27.16}]
+10:40AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TUP", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 12.0897}]
+10:40AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.09}]
+10:40AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.56}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.625}]
+10:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 34.54}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 21, "price": 34.32}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 12.065}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.64}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 11, "cs": 16, "price": 19.685}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.515}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.5343}]
+10:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 27.0499}]
+10:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "AUST", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.1977}, {"datatype": "VSA", "symbol": "AUST", "timeframe": "15Min", "vsa": 10, "cs": 0, "price": 10.02}, {"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 143.11}]
+10:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 11, "cs": 20, "price": 7.0863}]
+10:50AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 34.805}]
+10:50AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.0769}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.53}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.495}]
+10:55AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 11, "cs": 20, "price": 7.13}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 20.46}]
+10:55AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 34.92}]
+10:55AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.7418}]
+11:00AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 35.0}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 34.805}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 27.01}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 20.6001}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.495}]
+11:00AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.66}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 19.53}]
+11:00AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "EXPE", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 143.47}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.2}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 7.0769}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 12.0}]
+11:05AM on May 04, 2022
+[]
+11:05AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.1886}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.7619}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.7597}]
+11:05AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 27.18}]
+11:05AM on May 04, 2022
+[]
+11:10AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 27.2}, {"datatype": "VSA", "symbol": "AUST", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.3}]
+11:10AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.7507}]
+11:10AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.595}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.24}]
+11:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 26.72}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 27.18}]
+11:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 34.38}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 35.21}, {"datatype": "VSA", "symbol": "AUST", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 6.97}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 8.23}]
+11:15AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.14}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 7.1886}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.48}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 20.7597}, {"datatype": "VSA", "symbol": "KYMR", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 21.4}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.2475}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 19.7619}]
+11:20AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 11, "cs": 20, "price": 20.415}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.28}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 19.1299}]
+11:25AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "AUST", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.9793}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.41}]
+11:25AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.39}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.99}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 8.24}]
+11:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "ANDE", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 37.375}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.065}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 26.95}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 26.8499}]
+11:30AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.3428}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "15Min", "vsa": 11, "cs": 20, "price": 8.3044}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 11, "cs": 20, "price": 11.89}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 18.96}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 34.205}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.42}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.415}]
+11:35AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.31}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.37}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 26.84}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.43}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 8.1756}, {"datatype": "VSA", "symbol": "FRGE", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 30.96}]
+11:35AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.0}]
+11:40AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.2236}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 8.14}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 26.75}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.36}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.3684}]
+11:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 34.08}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 20.3699}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 20.43}, {"datatype": "VSA", "symbol": "FRGE", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 30.96}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 26.77}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 26.84}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.27}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 19.31}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 11.765}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.995}]
+11:45AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TMDX", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 28.15}]
+11:50AM on May 04, 2022
+[]
+11:50AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.7}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.22}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.09}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.68}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.18}]
+11:55AM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.5701}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 7.3722}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.6925}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.19}]
+12:00PM on May 04, 2022
+[]
+12:00PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.5301}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 27.18}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 11.7675}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "15Min", "vsa": 11, "cs": 16, "price": 8.22}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 7.09}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 21, "price": 35.0501}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.5775}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.845}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 20.7}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 19.71}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 19.68}]
+12:05PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 7.405}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.925}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.51}]
+12:05PM on May 04, 2022
+[]
+12:05PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.6306}]
+12:10PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.97}]
+12:10PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 14.57}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.62}]
+12:10PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.66}]
+12:10PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.71}]
+12:15PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "SOUN", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 13.64}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.8196}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 27.51}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.5101}]
+12:15PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 36.09}]
+12:15PM on May 04, 2022
+[]
+12:15PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 21.1666}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 11, "cs": 16, "price": 20.925}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 8.42}]
+12:15PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.29}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.875}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 19.6306}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 11.8999}]
+12:15PM on May 04, 2022
+[]
+12:20PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.6201}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 19.96}]
+12:20PM on May 04, 2022
+[]
+12:20PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.295}]
+12:25PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.63}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.86}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.0}]
+12:25PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 21.085}]
+12:25PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.3}]
+12:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.22}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 11, "cs": 16, "price": 7.295}, {"datatype": "VSA", "symbol": "ENPH", "timeframe": "15Min", "vsa": 11, "cs": 0, "price": 190.48}]
+12:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 11.7686}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 21.355}, {"datatype": "VSA", "symbol": "SOUN", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 13.5899}]
+12:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 11, "cs": 4, "price": 27.9712}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 8.63}]
+12:30PM on May 04, 2022
+[]
+12:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.5699}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 7.6201}]
+12:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 36.305}]
+12:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.075}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 19.96}]
+12:30PM on May 04, 2022
+[]
+12:35PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.24}]
+12:35PM on May 04, 2022
+[]
+12:35PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 27.99}]
+12:35PM on May 04, 2022
+[]
+12:35PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.51}]
+12:40PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 28.02}]
+12:40PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.5517}, {"datatype": "VSA", "symbol": "ARRY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 9.26}]
+12:40PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 20.2998}]
+12:40PM on May 04, 2022
+[]
+12:45PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.82}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 8.645}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 20.295}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.24}, {"datatype": "VSA", "symbol": "ANDE", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 37.59}]
+12:45PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TUP", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 11.87}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 11.9}]
+12:45PM on May 04, 2022
+[]
+12:45PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.5709}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 7.51}]
+12:45PM on May 04, 2022
+[]
+12:45PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 27.99}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.069}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 21, "price": 7.225}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 36.45}]
+12:45PM on May 04, 2022
+[]
+12:50PM on May 04, 2022
+[]
+12:50PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.8526}]
+12:50PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.219}, {"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 13.92}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 12.08}, {"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 43.71}, {"datatype": "VSA", "symbol": "CC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 41.57}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 6.905}]
+12:50PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.255}]
+12:50PM on May 04, 2022
+[]
+12:55PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 11, "cs": 20, "price": 7.3387}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.7}]
+12:55PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 41.59}]
+12:55PM on May 04, 2022
+[]
+12:55PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 6.99}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 36.75}, {"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 43.52}]
+12:55PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TUP", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 12.126}, {"datatype": "VSA", "symbol": "SHLS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 14.175}]
+01:00PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 41.475}, {"datatype": "VSA", "symbol": "CC", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 41.57}, {"datatype": "VSA", "symbol": "KYMR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 22.0}, {"datatype": "VSA", "symbol": "KYMR", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 21.93}, {"datatype": "VSA", "symbol": "SHLS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 14.1}, {"datatype": "VSA", "symbol": "NUTX", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.8309}, {"datatype": "VSA", "symbol": "ANDE", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 38.27}, {"datatype": "VSA", "symbol": "ANDE", "timeframe": "15Min", "vsa": 11, "cs": 16, "price": 37.88}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 12.0775}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 12.08}]
+01:00PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.3701}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.255}, {"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 14.09}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 28.27}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 36.805}]
+01:00PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 21.6}]
+01:00PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "CRWD", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 199.45}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "5Min", "vsa": 11, "cs": 0, "price": 8.65}, {"datatype": "VSA", "symbol": "PRTS", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 8.8526}, {"datatype": "VSA", "symbol": "TMDX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 30.63}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.98}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 11, "cs": 20, "price": 6.905}, {"datatype": "VSA", "symbol": "SHOP", "timeframe": "15Min", "vsa": 0, "cs": 1, "price": 483.7}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.33}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 7.219}, {"datatype": "VSA", "symbol": "ARRY", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 9.155}]
+01:01PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "FRGE", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 32.685}]
+01:05PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.59}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 21.53}, {"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 14.02}, {"datatype": "VSA", "symbol": "TMDX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 30.69}, {"datatype": "VSA", "symbol": "SOXS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 43.57}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 36.51}]
+01:10PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "RVLV", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 36.51}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.39}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.96}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 7.37}, {"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 14.07}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 12.19}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 21.54}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 28.17}]
+01:15PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 21.54}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 21.53}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 7.59}, {"datatype": "VSA", "symbol": "FRGE", "timeframe": "15Min", "vsa": 0, "cs": 1, "price": 34.67}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.39}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 28.17}, {"datatype": "VSA", "symbol": "ARRY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 9.25}, {"datatype": "VSA", "symbol": "ETSY", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 97.2095}, {"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 14.151}]
+01:20PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TWLO", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 115.52}, {"datatype": "VSA", "symbol": "ETSY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 97.5}, {"datatype": "VSA", "symbol": "UVXY", "timeframe": "5Min", "vsa": 11, "cs": 16, "price": 14.18}]
+01:25PM on May 04, 2022
+[]
+01:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "ETSY", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 95.78}, {"datatype": "VSA", "symbol": "ETSY", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 97.5}, {"datatype": "VSA", "symbol": "TWLO", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 115.52}, {"datatype": "VSA", "symbol": "LTHM", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 28.48}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 7.28}, {"datatype": "VSA", "symbol": "RVLV", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 36.51}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.96}, {"datatype": "VSA", "symbol": "CHGG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 20.4}, {"datatype": "VSA", "symbol": "UVXY", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 14.18}, {"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 21.53}]
+01:35PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 21.58}, {"datatype": "VSA", "symbol": "CC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 41.51}]
+01:40PM on May 04, 2022
+[]
+01:45PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "LYFT", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 21.58}, {"datatype": "VSA", "symbol": "TWLO", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 118.72}, {"datatype": "VSA", "symbol": "ETSY", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 96.12}]
+01:50PM on May 04, 2022
+[]
+01:55PM on May 04, 2022
+[]
+02:00PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "ETSY", "timeframe": "5Min", "vsa": 11, "cs": 4, "price": 99.25}, {"datatype": "VSA", "symbol": "ETSY", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 96.5}, {"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 12.23}, {"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.96}, {"datatype": "VSA", "symbol": "NUTX", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.83}]
+02:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "TUP", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 12.23}]
+03:15PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.96}]
+03:30PM on May 04, 2022
+[]
+04:15PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.96}]
+04:30PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.96}]
+05:00PM on May 04, 2022
+[{"datatype": "VSA", "symbol": "KZR", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 6.96}]
