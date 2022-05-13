@@ -70,6 +70,20 @@ class Util:
             return True
         return False
 
+    @staticmethod
+    def GetHighestLowestDf(df: pd.DataFrame, columnNameHigh:str, columneNameLow:str) -> set:
+        iMax = df[columnNameHigh].idxmax()
+        iMin = df[columneNameLow].idxmin()
+        high = df.iloc[iMax][columnNameHigh]
+        low = df.iloc[iMin][columneNameLow]
+        return high, low
+
+    @staticmethod
+    def GetHighestLowestIndexDf(df: pd.DataFrame, columnNameHigh:str, columneNameLow:str) -> set:
+        iMax = df[columnNameHigh].idxmax()
+        iMin = df[columneNameLow].idxmin()
+        return iMax, iMin
+
 
 class TestUtil:
 

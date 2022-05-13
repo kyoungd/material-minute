@@ -67,8 +67,8 @@ class TestFilterSupplyDemandRealData(unittest.TestCase):
     # 2022/04/28 4:30 AM - 10:30 AM PST
     def testSupplyDemandReal_04(self):
         result = self.executeApp('RIOT', '2022-04-28',
-                                 10, 30, TimePeriod.Min15.value)
-        self.assertFalse(result)
+                                 10, 40, TimePeriod.Min15.value)
+        self.assertTrue(result)
 
 
     # 2022/04/28 4:30 AM - 9:45 AM PST
@@ -86,3 +86,7 @@ class TestFilterSupplyDemandRealData(unittest.TestCase):
     def testSupplyDemandReal_07(self):
         result = self.executeApp('RVLV', '2022-05-02', 10, 45, TimePeriod.Min15.value)
         self.assertTrue(result)
+
+    def testSupplyDemandReal_08(self):
+        result = self.executeApp('VERU', '2022-05-13', 11, 35, TimePeriod.Min15.value)
+        self.assertFalse(result)
