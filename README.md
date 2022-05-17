@@ -271,3 +271,6 @@ keys *
 # test
 
 python3 test-realtime-data.py -t
+
+
+ts.range data_close_5MIN:AFRM 0 2000000000000000

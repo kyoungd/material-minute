@@ -13,7 +13,7 @@ class FilterSupplyDemandSimple:
     def __init__(self, marketOpenAt=None):
         self.marketOpenAt = TimeStamp.getMarketOpenTimestamp(
         ) if marketOpenAt is None else marketOpenAt
-        self.minMaxRangePercent = 0.06
+        self.minMaxRangePercent = 0.08
         self.minMaxNearPercent = 0.02
 
     def Run(self, symbol: str, dataf: pd.DataFrame, close: float) -> bool:
@@ -45,7 +45,7 @@ class FilterDailySupplyDemandZone:
     def IsPrerequisite(self, dataf: pd.DataFrame, close: float) -> bool:
         if len(dataf) <= 5:
             return False
-        if FilterPriceSpread.IsEnoughSpread(dataf, 0.04):
+        if FilterPriceSpread.IsEnoughSpread(dataf, self.minMaxRangePercent):
             return True
         return False
 
@@ -112,44 +112,24 @@ class FilterDailySupplyDemandZone:
     
     def matchHighLowKeyPoints(self, keypoints: pd.DataFrame, close: float, nearPercent: float) -> bool:
         highIdx, lowIdx = Util.GetHighestLowestIndexDf(keypoints, 'Close', 'Close')
-        firstIdx = max(highIdx, lowIdx)
-        firstPeak = keypoints.iloc[firstIdx]
-        if FilterPriceSpread.IsNearPrice(firstPeak.Close, close, nearPercent):
+        peakPoint = keypoints.iloc[highIdx] if highIdx > lowIdx else keypoints.iloc[lowIdx]
+        if FilterPriceSpread.IsNearPrice(peakPoint.Close, close, nearPercent):
             return True
-        secondIdx = min(highIdx, lowIdx)
-        secondPeak = keypoints.iloc[secondIdx]
-        if FilterPriceSpread.IsNearPrice(secondPeak.Close, close, nearPercent):
-            touches = 0
-            for idx, row in keypoints.iterrows():
-                if FilterPriceSpread.IsNearPrice(row.Close, close, nearPercent):
-                    touches = touches + 1
-            if touches >= 2:
-                return True
-        return False
 
     def Run(self, symbol: str, df: pd.DataFrame, close: float) -> bool:
         try:
             close = df.iloc[0]['Close']
-            if not self.IsPrerequisite(df, close):
+            if len(df) <= 5:
+                return False
+            if not FilterPriceSpread.IsEnoughSpread(df, self.minMaxRangePercent):
                 return False
             isPtMin, keypoints = self.fMinmax.Run(df, isRemoveRepeatMinMaxOnly=True)
             if len(keypoints) < 2:
                 return False
-            if self.matchHighLowKeyPoints(keypoints, close, self.minMaxNearPercent):
-                return True
+            if not self.matchHighLowKeyPoints(keypoints, close, self.minMaxNearPercent):
+                return False
             
-            # keypoints:pd.DataFrame = self.beforeAndAfterSlope(keypoints, close)
-            
-            # firstkeys:list = self.firstKeyPoints(keypoints[::-1])
-            # for row in firstkeys[::-1]:
-            #     if FilterPriceSpread.IsNearPrice(row['Close'], close, self.minMaxNearPercent):
-            #         takeoff = row['Takeoff']
-            #         if takeoff >= self.takeoffSlope:
-            #             return True
-            #         else:  # kyd
-            #             logging.info(
-            #                 f'FilterDailySupplyDemandZone: ${close:.2f} {takeoff:.2f}% ')
-            return False
+            return True
         except Exception as ex:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
             return False

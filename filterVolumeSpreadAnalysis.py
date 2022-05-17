@@ -120,13 +120,15 @@ class volumeSpreadAnalysis:
             if self.localMinMax(df, 1, 4):
                 return 1
         # selling climax
-        if abs(s2) > 4 and v2 > 2.5 and not self.isSameSign(s1, s2) and abs(s2) > abs(s1) and self.isSameSign(s2, s3) and self.isSameSign(s2, s4):
+        if abs(s2) > 3 and v2 > 2.5 and not self.isSameSign(s1, s2) and abs(s2) > abs(s1) and self.isSameSign(s2, s3) and self.isSameSign(s2, s4):
             if self.localMinMax(df, 1, 4):
                 return 2
 
-        if not self.isSameSign(s2, s4) and self.isSameSign(s1, s2):
-            if abs(s2) > abs(s3) * self.factor11 and abs(s4) > abs(s3) * self.factor11:
-                return 11
+        #
+        # if not self.isSameSign(s2, s4) and self.isSameSign(s1, s2):
+        #     if abs(s2) > abs(s3) * self.factor11 and abs(s4) > abs(s3) * self.factor11:
+        #         return 11
+        #
 
         return 0
 

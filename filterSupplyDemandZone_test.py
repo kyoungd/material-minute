@@ -4,46 +4,6 @@ from util import TestUtil
 from filterSupplyDemandZone import FilterDailySupplyDemandZone
 from alpacaHistorical import TimePeriod
 
-class TestFilterSupplyDemandZone(unittest.TestCase):
-
-    def setUp(self) -> None:
-        self.app = FilterDailySupplyDemandZone()
-
-
-    def testSupplyDemand_01(self):
-        seed = [113, 114, 115,
-                114, 113, 112, 111, 105, 103, 99, 95, 90, 88, 85,
-                88, 90, 92, 95, 99, 104, 110, 116, 124, 130, 135,
-                134, 131, 129, 124, 120, 119,
-                120, 123, 127, 129,
-                130, 125, 120, 125, 120, 119, 118, 117, 110]
-        df = TestUtil.dfSetup(seed)
-        result1 = self.app.Run('abc', df, 0)
-        self.assertEqual(result1, True)
-
-    def testSupplyDemand_02(self):
-        seed = [85.4, 90, 95, 100, 105, 110, 113, 114, 115,
-                114, 113, 112, 111, 105, 103, 99, 95, 90, 88, 85,
-                88, 90, 92, 95, 99, 104, 110, 116, 124, 130, 135,
-                134, 131, 129, 124, 120, 119,
-                120, 123, 127, 129,
-                130, 125, 120, 125, 120, 119, 118, 117, 110]
-        df = TestUtil.dfSetup(seed)
-        result1 = self.app.Run('abc', df, 0)
-        self.assertEqual(result1, True)
-
-    def testSupplyDemand_03(self):
-        seed = [125, 120, 115, 110, 113, 114, 115,
-                114, 113, 112, 111, 105, 103, 99, 95, 90, 88, 85,
-                88, 90, 92, 95, 99, 104, 110, 116, 124, 130, 135,
-                134, 131, 129, 124, 120, 119,
-                120, 123, 127, 129,
-                130, 125, 120, 125, 120, 119, 118, 117, 110]
-        df = TestUtil.dfSetup(seed)
-        result1 = self.app.Run('abc', df, 0)
-        self.assertEqual(result1, False)
-
-
 class TestFilterSupplyDemandRealData(unittest.TestCase):
 
     def executeApp(self, symbol, endDate, endHour, endMinute, timeframe):

@@ -46,12 +46,12 @@ class EventBarDataProcess:
                 if self.abcd.Run(symbol, df, close):
                     candlestickparttern += 4
                 # 8 for Pivot Point pattern
-                if self.pivot.Run(symbol, df, close):
-                    candlestickparttern += 8
-                # 16 for Pivot Point trading
+                # if self.pivot.Run(symbol, df, close):
+                #     candlestickparttern += 8
+                # 16 for Supply Demand Zone trading
                 high = df.iloc[0]['High']
                 low = df.iloc[0]['Low']
-                if self.sdz.Run(symbol, df, high) or self.sdz.Run(symbol, df, low):
+                if self.sdz.Run(symbol, df, close):
                     candlestickparttern += 16
                 self.publisher.publish({
                     'datatype': 'VSA', 

@@ -1,4 +1,6 @@
-import json
+import numpy as np
+import matplotlib.pyplot as plt
+import requests
 import pandas as pd
 from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 
@@ -84,6 +86,40 @@ class Util:
         iMin = df[columneNameLow].idxmin()
         return iMax, iMin
 
+
+    # IF CHOPPINESS INDEX >= 61.8 - -> MARKET IS CONSOLIDATING
+    # IF CHOPPINESS INDEX <= 38.2 - -> MARKET IS TRENDING
+    # https://medium.com/codex/detecting-ranging-and-trending-markets-with-choppiness-index-in-python-1942e6450b58
+    @staticmethod
+    def ChoppinessIndex(high, low, close, lookback=None):
+        lookback = 14 if lookback is None else lookback
+        tr1 = pd.DataFrame(high - low).rename(columns={0: 'tr1'})
+        tr2 = pd.DataFrame(abs(high - close.shift(1))).rename(columns={0: 'tr2'})
+        tr3 = pd.DataFrame(abs(low - close.shift(1))).rename(columns={0: 'tr3'})
+        frames = [tr1, tr2, tr3]
+        tr = pd.concat(frames, axis=1, join='inner').dropna().max(axis=1)
+        atr = tr.rolling(1).mean()
+        highh = high.rolling(lookback).max()
+        lowl = low.rolling(lookback).min()
+        ci = 100 * np.log10((atr.rolling(lookback).sum()) /
+                            (highh - lowl)) / np.log10(lookback)
+        return ci
+
+    # tsla['ci_14'] = ChoppinessIndex(tsla['high'], tsla['low'], tsla['close'], 14)
+    # tsla = tsla.dropna()
+
+    @staticmethod
+    def IsTrending(choppinessValue: float) -> bool:
+        if choppinessValue <= 38.2:
+            return True
+        return False
+
+    @staticmethod
+    def IsConsolidating(chopinessValue: float) -> bool:
+        if chopinessValue >= 61.8:
+            return True
+        return False
+    
 
 class TestUtil:
 
