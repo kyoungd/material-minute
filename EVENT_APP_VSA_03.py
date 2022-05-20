@@ -11,6 +11,7 @@ from filterSupplyDemandZone import FilterDailySupplyDemandZone
 from filterPriceSpread import FilterPriceSpread
 from filterAbcdPattern import FilterAbcdPattern
 from filterPivotPoint import FilterPivotPoint
+from fitlerKeylevels import FilterKeyLevels
 
 class EventBarDataProcess:
 
@@ -21,7 +22,7 @@ class EventBarDataProcess:
         self.subscriber = RedisSubscriber(
             PUBSUB_KEYS.EVENT_BAR_FILTER_VSA, None, self.Run)
         self.filter = FilterFirst()
-        self.sdz = FilterDailySupplyDemandZone()
+        self.sdz = FilterKeyLevels()
         self.abcd = FilterAbcdPattern()
         self.pivot = FilterPivotPoint()
         self.cs = FilterCandlePattern()
@@ -51,7 +52,7 @@ class EventBarDataProcess:
                 # 16 for Supply Demand Zone trading
                 high = df.iloc[0]['High']
                 low = df.iloc[0]['Low']
-                if self.sdz.Run(symbol, df, close):
+                if self.sdz.Run(symbol, df):
                     candlestickparttern += 16
                 self.publisher.publish({
                     'datatype': 'VSA', 
