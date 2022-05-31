@@ -4,21 +4,18 @@ from db import DB
 from redisHash import KeyLevelsStack
 
 class DailyKeyLevels:
-    db: DB = None
-    keylevels: dict = {}
-
     def __init__(self):
-        self.DB = DB()
+        self.db = DB()
         self.stack = KeyLevelsStack()
-        if len(DailyKeyLevels.keylevels) <= 0:
-            levels = self.readAllFromDb()
-            for row in levels:
-                try:
-                    symbol = row[0]
-                    data = row[1]
-                    DailyKeyLevels.keylevels[symbol] = data
-                except Exception as ex:
-                    logging.error(f'DailyKeyLevels.__init__ {row}')
+        # if len(DailyKeyLevels.keylevels) <= 0:
+        #     levels = self.readAllFromDb()
+        #     for row in levels:
+        #         try:
+        #             symbol = row[0]
+        #             data = row[1]
+        #             DailyKeyLevels.keylevels[symbol] = data
+        #         except Exception as ex:
+        #             logging.error(f'DailyKeyLevels.__init__ {row}')
 
     def readAllFromDb(self):
         query = """SELECT symbol, keylevels FROM public.market_data WHERE timeframe=%s AND NOT is_deleted ORDER BY symbol asc"""
@@ -28,7 +25,8 @@ class DailyKeyLevels:
             return results
         return None
 
-    def Run(self):
+    def LoadKeyLevels(self):
+        self.stack.deleteAll()
         levels = self.readAllFromDb()
         for row in levels:
             try:
@@ -37,3 +35,8 @@ class DailyKeyLevels:
                 self.stack.Add(symbol, data)
             except Exception as ex:
                 logging.error(f'DailyKeyLevels.__init__ {row}')
+
+    @staticmethod
+    def run():
+        app = DailyKeyLevels()
+        app.LoadKeyLevels()

@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 from util import TestUtil
-from fitlerKeylevels import FilterKeyLevels
+from filterKeylevels import FilterKeyLevels
 from alpacaHistorical import TimePeriod
 
 

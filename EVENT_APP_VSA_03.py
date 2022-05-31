@@ -11,7 +11,9 @@ from filterSupplyDemandZone import FilterDailySupplyDemandZone
 from filterPriceSpread import FilterPriceSpread
 from filterAbcdPattern import FilterAbcdPattern
 from filterPivotPoint import FilterPivotPoint
-from fitlerKeylevels import FilterKeyLevels
+from filterKeylevels import FilterKeyLevels
+from tightMinMax import TightMinMax
+from filterTrend import FilterTrends
 
 class EventBarDataProcess:
 
@@ -26,6 +28,7 @@ class EventBarDataProcess:
         self.abcd = FilterAbcdPattern()
         self.pivot = FilterPivotPoint()
         self.cs = FilterCandlePattern()
+        self.trend = FilterTrends()
 
     def Run(self, data):
         try:
@@ -40,19 +43,25 @@ class EventBarDataProcess:
             vsa = app1.Run(symbol, df)
             close = df.iloc[0]['Close']
             if FilterPriceSpread.IsEnoughSpread(df, 0.3):
+                fMinMax = TightMinMax(tightMinMaxN=2)
+                isFirstMin, dfMinMax = fMinMax.Run(df)
                 # 1 engulfing candle
                 # 2 morning/evening star candle
-                candlestickparttern = self.cs.Run(symbol, df)
+                # candlestickparttern = self.cs.Run(symbol, df)
+                candlestickparttern = 0
                 # 4 for ABCD pattern
-                if self.abcd.Run(symbol, df, close):
+                if self.abcd.Run(symbol, df, dfMinMax=dfMinMax):
                     candlestickparttern += 4
                 # 8 for Pivot Point pattern
                 # if self.pivot.Run(symbol, df, close):
                 #     candlestickparttern += 8
-                # 16 for Supply Demand Zone trading
+                if self.trend.Run(symbol, df, dfMinMax, isFirstMin):
+                    candlestickparttern += 8
+
+                # 16 for Key Level trading
                 high = df.iloc[0]['High']
                 low = df.iloc[0]['Low']
-                if self.sdz.Run(symbol, df):
+                if self.sdz.Run(symbol, df, dfMinMax=dfMinMax):
                     candlestickparttern += 16
                 self.publisher.publish({
                     'datatype': 'VSA', 

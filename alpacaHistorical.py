@@ -14,6 +14,7 @@ response = requests.get('https://www.dev2qa.com', headers=custom_header)
 class TimePeriod(Enum):
     REALTIME = "0"
     Min1 = "1Min"
+    Min2 = "2Min"
     Min5 = "5Min"
     Min10 = "10Min"
     Min15 = "15Min"

@@ -11,10 +11,13 @@ from EVENT_BAR_STACK_ADD_04 import RedisStack
 from EVENT_BAR_POST_TO_SERVER_99 import EventBarPostToServer
 from redisUtil import SetInterval
 from filterPivotPoint import LoadPivotPoints
+from utilDailyKeyLevels import DailyKeyLevels
+
 
 def ThreadRun():
     # multi threading class
     time.sleep(5)  # give the initial connection time to be established
+    DailyKeyLevels.run()
     EventBarHandleRealtimeData.run()
     EventBarDataProcess.run()
     RedisStack.run()

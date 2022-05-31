@@ -85,10 +85,10 @@ class FilterAbcdPattern:
                 return True
         return False
 
-    def Run(self, symbol:str, df: pd.DataFrame, close: float) -> bool:
+    def Run(self, symbol:str, df: pd.DataFrame, dfMinMax: pd.DataFrame = None) -> bool:
         try:
             close = df.iloc[0]['Close']
-            isFirstMin, dfMinMax= self.fMinmax.Run(df)
+            _, dfMinMax= self.fMinmax.Run(df) if dfMinMax is None else (False, dfMinMax)
             if len(dfMinMax) < 3:
                 return False
             if self.abcPatternResult(df, dfMinMax, 2, 1, 0, close):

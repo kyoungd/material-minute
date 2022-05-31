@@ -23,28 +23,30 @@ class FilterKeyLevels:
                 return True
         return False
 
-    def getkeyLevels(self, symbol: str) -> list:
-        _, keylevels = self.stack.Get(symbol) if keylevels is None else keylevels
-        return keylevels
-
-    def Run(self, symbol: str, df: pd.DataFrame, keylevels: list = None) -> bool:
+    def Run(self, symbol: str, df: pd.DataFrame, dfMinMax: pd.DataFrame = None, keylevels: list = None) -> bool:
         try:
             close = df.iloc[0]['Close']
             if len(df) <= 5:
                 return False
             if not FilterPriceSpread.IsEnoughSpread(df, self.minMaxRangePercent):
                 return False
-            isPtMin, keypoints = self.fMinmax.Run(df)
-            pivot1 = None if len(keypoints) < 1 else keypoints.iloc[0]
-            pivot2 = None if len(keypoints) < 2 else keypoints.iloc[1]
-            keylevels = self.getKeyLevels(symbol) if keylevels is None else keylevels
+            _, minmax = self.fMinmax.Run(df) if dfMinMax is None else (False, dfMinMax)
+            minmax1 = None if len(minmax) < 1 else minmax.iloc[0]
+            minmax2 = None if len(minmax) < 2 else minmax.iloc[1]
+            keylevels = self.stack.Get(
+                symbol) if keylevels is None else keylevels
             if len(keylevels) > 0:
                 for kl in keylevels:
                     if Util.IsNearPrice(close, kl['Close'], self.minMaxNearPercent):
-                        if pivot1 is not None and Util.IsNearPrice(pivot2.Close, kl['Close'], self.minMaxNearPercent):
-                            return True
-                        if pivot2 is not None and Util.IsNearPrice(pivot1.Close, kl['Close'], self.minMaxNearPercent):
-                            return True
+                        if minmax1 is not None:
+                            if Util.IsNearPrice(minmax1.Close, kl['Close'], self.minMaxNearPercent):
+                                if Util.IsNearPrice(close, minmax1.Close, self.minMaxNearPercent):
+                                    return True
+                        if minmax2 is not None:
+                            if Util.IsNearPrice(minmax2.Close, kl['Close'], self.minMaxNearPercent):
+                                if Util.IsNearPrice(close, minmax2.Close, self.minMaxNearPercent):
+                                    return True
+
             return False
         except Exception as ex:
             logging.error(f'FilterDailySupplyDemandZone {symbol} - {ex}')
