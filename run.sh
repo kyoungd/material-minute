@@ -1,1 +1,1 @@
-python3 app.py --test
+python3 app.py --nothing

@@ -9,7 +9,7 @@
       "type": "python",
       "request": "launch",
       "program": "app.py",
-      "args": ["--test"],
+      "args": ["--nothing"],
       "console": "integratedTerminal"
     },
     {
@@ -17,7 +17,6 @@
       "type": "python",
       "request": "launch",
       "program": "${file}",
-      "args": ["--tx"],
       "console": "integratedTerminal"
     }
   ]

@@ -256,10 +256,10 @@ class TimeStamp:
         switcher = {
             RedisTimeFrame.REALTIME: 1 * minute,
             RedisTimeFrame.SEC10: 20 * minute,
-            RedisTimeFrame.MIN1: 20 * minute,
-            RedisTimeFrame.MIN2: 120 * minute,
-            RedisTimeFrame.MIN5: 8 * hour,
-            RedisTimeFrame.MIN15: 16 * hour,
+            RedisTimeFrame.MIN1: 2 * hour,
+            RedisTimeFrame.MIN2: 4 * hour,
+            RedisTimeFrame.MIN5: 12 * hour,
+            RedisTimeFrame.MIN15: 24 * hour,
         }
         dt = switcher.get(timeframe)
         return dt

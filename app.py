@@ -55,13 +55,9 @@ if __name__ == "__main__":
             tables = TimeseriesTable()
             tables.run()
         elif (args[0] == "--test"):
-            content = [{"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 25.89}, {"datatype": "VSA", "symbol": "MARA", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.5716}, {
-                "datatype": "VSA", "symbol": "VTNR", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 15.75}, {"datatype": "VSA", "symbol": "BWV", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 5.06}]
-            app = EventBarPostToServer()
-            app.PushToServer(content)
-            RealtimeApp(isDebug=False)
+            RealtimeApp(isDebug=True)
         else:
-            RealtimeApp()
+            RealtimeApp(isDebug=False)
     else:
         SetInterval(60, RunApp)
     logging.info('done')

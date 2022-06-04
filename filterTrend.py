@@ -6,15 +6,15 @@ import pandas as pd
 import os
 import logging
 from redisUtil import TimeStamp
-
+from util import Util
 
 class trendMinMax:
     def __init__(self, minmaxs: pd.DataFrame, isFirstMin: bool, close: float):
         self.df = minmaxs
         self.isFirstMin = isFirstMin
         self.close = close
-        self.minimumTrend = float(EnvFile.Get("FITLER_TREND_COUNT", '1.5'))
-        self.minimumDelta = float(EnvFile.Get("FITLER_TREND_DELTA", '0.03'))
+        self.minimumTrend = float(EnvFile.Get("FILTER_TREND_COUNT", '1.5'))
+        self.minimumDelta = float(EnvFile.Get("FILTER_TREND_DELTA", '0.03'))
 
     def isIncludeTodayClose(self, todayClose: float, df: pd.DataFrame):
         pivot1 = df.iloc[0]['Close']
@@ -91,9 +91,9 @@ class trendMinMax:
 
 class FilterTrends:
     def __init__(self):
-        self.minimumReversePeaks:float = float(EnvFile.Get("FITLER_TREND_REVERSE_COUNT", '1'))
-        self.maximumReversePeaks:float = float(EnvFile.Get("FITLER_TREND_REVERSE_COUNT_MAX", '2.5'))
-        self.minimumTrendPeaks:float = float(EnvFile.Get("FITLER_TREND_COUNT", '0.5'))
+        self.minimumReversePeaks:float = float(EnvFile.Get("FILTER_TREND_REVERSE_COUNT", '1'))
+        self.maximumReversePeaks:float = float(EnvFile.Get("FILTER_TREND_REVERSE_COUNT_MAX", '2.5'))
+        self.minimumTrendPeaks:float = float(EnvFile.Get("FILTER_TREND_MINIMUM_PEAKS", '0.5'))
         self.marketOpenAt = TimeStamp.getMarketOpenTimestamp()
 
     def getEma(self, df: pd.DataFrame, lookback: int = None) -> pd.DataFrame:
@@ -172,6 +172,31 @@ class FilterTrends:
                 #     self.jsonData, symbol, 'trend', trendPeaks)
                 # self.sa.UpdateFilter(
                 #     self.jsonData, symbol, 'reverse', reversePeaks)
+        except Exception as e:
+            logging.error(f'FilterTrends.Run: {symbol} {e}')
+            print(e)
+        return False
+
+    def RunNew(self, symbol:str, dfDaily:pd.DataFrame, dfMinMax:pd.DataFrame = None, isFirstMinimum: bool = None) -> bool:
+        try:
+            close = dfDaily['Close'][0]  # last close price
+            minMax = TightMinMax()
+            isFirstMinimum, df = minMax.Run(symbol) if dfMinMax is None else (isFirstMinimum, dfMinMax)  # calculate local min
+            if df is not None and (len(df.index) > 2):
+                if self.isNewTrend(df, isFirstMinimum, close):
+                    dfDaily = Util.GetEma(dfDaily, 'ema9', 9)
+                    indexA = df.iloc[0].index
+                    indexB = df.iloc[1].index
+                    if not Util.IsAboveEma(dfDaily, 0, indexB, 'ema9'):
+                        return False
+                    if len(dfDaily) < (26 + indexB):
+                        return True
+                    dfDaily = Util.GetEma(dfDaily, 'ema12', 12)
+                    dfDaily = Util.GetEma(dfDaily, 'ema26', 26)
+                    if not Util.IsAboveOtherEma(dfDaily, indexA, indexB, 'ema12', 'ema26'):
+                        return False
+                    return True
+            return False
         except Exception as e:
             logging.error(f'FilterTrends.Run: {symbol} {e}')
             print(e)

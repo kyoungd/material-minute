@@ -1,4 +1,3 @@
-[]
 12:45PM on May 16, 2022
 []
 12:46PM on May 16, 2022
@@ -48,18 +47,7 @@
 06:40AM on May 17, 2022
 [{"datatype": "VSA", "symbol": "AI", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 17.58}, {"datatype": "VSA", "symbol": "VTNR", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 14.4892}, {"datatype": "VSA", "symbol": "WE", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 6.73}, {"datatype": "VSA", "symbol": "ASAN", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 23.14}]
 06:45AM on May 17, 2022
-[
-    {"datatype": "VSA", "symbol": "PTON", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 15.84}, 
-    {"datatype": "VSA", "symbol": "AFRM", "timeframe": "15Min", "vsa": 0, "cs": 12, "price": 24.1186}, 
-    {"datatype": "VSA", "symbol": "FNGU", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 9.53}, 
-    {"datatype": "VSA", "symbol": "ASAN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 23.01}, 
-    {"datatype": "VSA", "symbol": "MTTR", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 5.2285}, 
-    {"datatype": "VSA", "symbol": "OPEN", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 7.42}, 
-    {"datatype": "VSA", "symbol": "U", "timeframe": "15Min", "vsa": 0, "cs": 12, "price": 37.575}, 
-    {"datatype": "VSA", "symbol": "RBLX", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 33.04}, 
-    {"datatype": "VSA", "symbol": "TTD", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 53.1724}, 
-    {"datatype": "VSA", "symbol": "YANG", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 16.42}
-]
+[{"datatype": "VSA", "symbol": "PTON", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 15.84}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "15Min", "vsa": 0, "cs": 12, "price": 24.1186}, {"datatype": "VSA", "symbol": "FNGU", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 9.53}, {"datatype": "VSA", "symbol": "ASAN", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 23.01}, {"datatype": "VSA", "symbol": "MTTR", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 5.2285}, {"datatype": "VSA", "symbol": "OPEN", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 7.42}, {"datatype": "VSA", "symbol": "U", "timeframe": "15Min", "vsa": 0, "cs": 12, "price": 37.575}, {"datatype": "VSA", "symbol": "RBLX", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 33.04}, {"datatype": "VSA", "symbol": "TTD", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 53.1724}, {"datatype": "VSA", "symbol": "YANG", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 16.42}]
 06:50AM on May 17, 2022
 [{"datatype": "VSA", "symbol": "VTNR", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 14.5112}, {"datatype": "VSA", "symbol": "M", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 21.24}, {"datatype": "VSA", "symbol": "U", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 37.74}]
 06:55AM on May 17, 2022
@@ -2669,41 +2657,7 @@
 06:40AM on May 25, 2022
 [{"datatype": "VSA", "symbol": "M", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 18.12}, {"datatype": "VSA", "symbol": "BYND", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 23.56}, {"datatype": "VSA", "symbol": "EQT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 45.84}, {"datatype": "VSA", "symbol": "GME", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 92.15}, {"datatype": "VSA", "symbol": "DKNG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 13.8}, {"datatype": "VSA", "symbol": "ASAN", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 18.805}, {"datatype": "VSA", "symbol": "CFLT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 17.72}, {"datatype": "VSA", "symbol": "CVET", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.5}, {"datatype": "VSA", "symbol": "SPWR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 16.08}, {"datatype": "VSA", "symbol": "DG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 195.94}, {"datatype": "VSA", "symbol": "HRB", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 33.77}, {"datatype": "VSA", "symbol": "CTIC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.09}, {"datatype": "VSA", "symbol": "COTY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.0}, {"datatype": "VSA", "symbol": "CHPT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.53}, {"datatype": "VSA", "symbol": "SABR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.76}, {"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.6499}, {"datatype": "VSA", "symbol": "DVAX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 11.205}, {"datatype": "VSA", "symbol": "CPNG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 13.24}, {"datatype": "VSA", "symbol": "EA", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 135.365}, {"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.3094}, {"datatype": "VSA", "symbol": "MQ", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.5117}, {"datatype": "VSA", "symbol": "TWTR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 36.39}, {"datatype": "VSA", "symbol": "DSX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.19}, {"datatype": "VSA", "symbol": "DDOG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 86.83}]
 06:45AM on May 25, 2022
-[
-    {"datatype": "VSA", "symbol": "ERX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 67.15}, 
-    {"datatype": "VSA", "symbol": "TWTR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 36.77}, 
-    {"datatype": "VSA", "symbol": "TWTR", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 36.47}, 
-    {"datatype": "VSA", "symbol": "RIVN", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 26.885}, 
-    {"datatype": "VSA", "symbol": "CVET", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.47}, 
-    {"datatype": "VSA", "symbol": "CPNG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 13.075}, 
-    {"datatype": "VSA", "symbol": "CPNG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 13.29}, 
-    {"datatype": "VSA", "symbol": "COTY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.04}, 
-    {"datatype": "VSA", "symbol": "MQ", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.51}, 
-    {"datatype": "VSA", "symbol": "U", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 35.38}, 
-    {"datatype": "VSA", "symbol": "DDOG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 87.135}, 
-    {"datatype": "VSA", "symbol": "DDOG", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 85.42}, 
-    {"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.38}, 
-    {"datatype": "VSA", "symbol": "BULZ", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.0}, 
-    {"datatype": "VSA", "symbol": "VERU", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 12.0625}, 
-    {"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.3194}, 
-    {"datatype": "VSA", "symbol": "DKNG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 13.71}, 
-    {"datatype": "VSA", "symbol": "SGHC", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.55}, 
-    {"datatype": "VSA", "symbol": "SOFI", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 6.8}, 
-    {"datatype": "VSA", "symbol": "M", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 17.975}, 
-    {"datatype": "VSA", "symbol": "M", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 17.93}, 
-    {"datatype": "VSA", "symbol": "CTIC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.1203}, 
-    {"datatype": "VSA", "symbol": "CFLT", "timeframe": "5Min", "vsa": 0, "cs": 17, "price": 17.795}, 
-    {"datatype": "VSA", "symbol": "CHPT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.43}, 
-    {"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.62}, 
-    {"datatype": "VSA", "symbol": "LABU", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 5.5141}, 
-    {"datatype": "VSA", "symbol": "EQT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 45.83}, 
-    {"datatype": "VSA", "symbol": "RCL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 49.433}, 
-    {"datatype": "VSA", "symbol": "FTCH", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 6.97}, 
-    {"datatype": "VSA", "symbol": "UPST", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 37.99}, 
-    {"datatype": "VSA", "symbol": "UPST", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 37.52}, 
-    {"datatype": "VSA", "symbol": "GME", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 91.56}, 
-    {"datatype": "VSA", "symbol": "AFRM", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 21.1}
-]
+[{"datatype": "VSA", "symbol": "ERX", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 67.15}, {"datatype": "VSA", "symbol": "TWTR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 36.77}, {"datatype": "VSA", "symbol": "TWTR", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 36.47}, {"datatype": "VSA", "symbol": "RIVN", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 26.885}, {"datatype": "VSA", "symbol": "CVET", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.47}, {"datatype": "VSA", "symbol": "CPNG", "timeframe": "5Min", "vsa": 0, "cs": 20, "price": 13.075}, {"datatype": "VSA", "symbol": "CPNG", "timeframe": "15Min", "vsa": 0, "cs": 20, "price": 13.29}, {"datatype": "VSA", "symbol": "COTY", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.04}, {"datatype": "VSA", "symbol": "MQ", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 9.51}, {"datatype": "VSA", "symbol": "U", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 35.38}, {"datatype": "VSA", "symbol": "DDOG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 87.135}, {"datatype": "VSA", "symbol": "DDOG", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 85.42}, {"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.38}, {"datatype": "VSA", "symbol": "BULZ", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.0}, {"datatype": "VSA", "symbol": "VERU", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 12.0625}, {"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.3194}, {"datatype": "VSA", "symbol": "DKNG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 13.71}, {"datatype": "VSA", "symbol": "SGHC", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 6.55}, {"datatype": "VSA", "symbol": "SOFI", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 6.8}, {"datatype": "VSA", "symbol": "M", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 17.975}, {"datatype": "VSA", "symbol": "M", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 17.93}, {"datatype": "VSA", "symbol": "CTIC", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.1203}, {"datatype": "VSA", "symbol": "CFLT", "timeframe": "5Min", "vsa": 0, "cs": 17, "price": 17.795}, {"datatype": "VSA", "symbol": "CHPT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.43}, {"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.62}, {"datatype": "VSA", "symbol": "LABU", "timeframe": "15Min", "vsa": 0, "cs": 16, "price": 5.5141}, {"datatype": "VSA", "symbol": "EQT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 45.83}, {"datatype": "VSA", "symbol": "RCL", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 49.433}, {"datatype": "VSA", "symbol": "FTCH", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 6.97}, {"datatype": "VSA", "symbol": "UPST", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 37.99}, {"datatype": "VSA", "symbol": "UPST", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 37.52}, {"datatype": "VSA", "symbol": "GME", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 91.56}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 21.1}]
 06:50AM on May 25, 2022
 [{"datatype": "VSA", "symbol": "ZS", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 129.35}, {"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.3107}, {"datatype": "VSA", "symbol": "CVET", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 20.49}, {"datatype": "VSA", "symbol": "FNGU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 7.34}, {"datatype": "VSA", "symbol": "EQT", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 45.82}, {"datatype": "VSA", "symbol": "TWTR", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 36.86}, {"datatype": "VSA", "symbol": "STEM", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.945}, {"datatype": "VSA", "symbol": "AFRM", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 20.955}, {"datatype": "VSA", "symbol": "SQ", "timeframe": "5Min", "vsa": 10, "cs": 0, "price": 76.5734}, {"datatype": "VSA", "symbol": "SE", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 73.625}, {"datatype": "VSA", "symbol": "M", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 18.0}, {"datatype": "VSA", "symbol": "BBY", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 75.53}, {"datatype": "VSA", "symbol": "UPST", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 37.58}, {"datatype": "VSA", "symbol": "CHPT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 10.415}, {"datatype": "VSA", "symbol": "LABU", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 5.6399}, {"datatype": "VSA", "symbol": "DKS", "timeframe": "5Min", "vsa": 0, "cs": 1, "price": 67.351}, {"datatype": "VSA", "symbol": "DKNG", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 13.695}]
 06:55AM on May 25, 2022

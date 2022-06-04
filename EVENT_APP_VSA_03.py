@@ -57,7 +57,6 @@ class EventBarDataProcess:
                 #     candlestickparttern += 8
                 if self.trend.Run(symbol, df, dfMinMax, isFirstMin):
                     candlestickparttern += 8
-
                 # 16 for Key Level trading
                 high = df.iloc[0]['High']
                 low = df.iloc[0]['Low']

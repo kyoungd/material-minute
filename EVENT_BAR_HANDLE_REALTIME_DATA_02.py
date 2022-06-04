@@ -49,6 +49,7 @@ class EventBarHandleRealtimeData:
             else:
                 logging.info(
                     f"EventBarHandleRealtimeData.publish2Min: Not Enough {symbol} {timeframe} {arrLen}")
+                data3 = self.rtb.RedisGetRealtimeData(None, symbol, timeframe)
 
     def AddBar(self, data=None):
         try:

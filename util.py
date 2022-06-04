@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import requests
 import pandas as pd
+import talib
 from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 
 class Util:
@@ -120,6 +121,44 @@ class Util:
             return True
         return False
     
+    @staticmethod
+    def GetEma(df: pd.DataFrame, emaName:str = None, lookback: int = None) -> pd.DataFrame:
+        colName = 'ema9' if emaName is None else emaName
+        lookback = 9 if lookback is None else lookback
+        df1 = df[::-1]
+        df1 = df1.reset_index()
+        closesMean = talib.EMA(df1.Close, lookback)
+        df1[colName] = closesMean
+        # df2 = df1.assign(ema9=closesMean)
+        df1 = df1[::-1]
+        df1 = df1.reset_index()
+        return df1
+
+    @staticmethod
+    def IsAboveEma(df: pd.DataFrame, indexA: int, indexB: int, emaName) -> bool:
+        colName = 'ema9' if emaName is None else emaName
+        isMovingUp = True if df.iloc[indexA].Close < df.iloc[indexB].Close else False
+        for idx in range(indexA, indexB):
+            close = df.iloc[idx].Close
+            emaN = df.iloc[idx][colName]
+            if isMovingUp and close < emaN:
+                return False
+            if not isMovingUp and close > emaN:
+                return False
+        return True
+
+    @staticmethod
+    def IsAboveOtherEma(df: pd.DataFrame, indexA: int, indexB: int, emaColNameA:str, emaColNameB:str) -> bool:
+        isMovingUp = True if df.iloc[indexA].Close < df.iloc[indexB].Close else False
+        for idx in range(indexA, indexB):
+            emaA = df.iloc[idx][emaColNameA]
+            emaB = df.iloc[idx][emaColNameB]
+            if isMovingUp and emaA < emaB:
+                return False
+            if not isMovingUp and emaA > emaB:
+                return False
+        return True
+
 
 class TestUtil:
 

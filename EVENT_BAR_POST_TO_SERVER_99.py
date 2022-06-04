@@ -11,13 +11,14 @@ class EventBarPostToServer:
         self.subscriber = RedisSubscriber(
             PUBSUB_KEYS.EVENT_BAR_POST_TO_SERVER, None, self.PushToServer)
 
-    def PushToServer(self, content, dest=None):
+    def PushToServer(self, content, dest=None, date=None):
         print('start push. current date:')
         print(datetime.now())
         x = filter(lambda x: x['vsa'] > 0 or x['cs'] > 0, content)
         try:
             url = EnvFile.Get(
                 'PUSH_REALTIME_URL', 'https://simp-admin.herokuapp.com/api/realtimes?datatype=VSA&timeframe=15Min') if dest is None else dest
+            url = url if date is None else url + '&date=' + date
             # url = 'http://localhost:1337/api/realtimes?datatype=VSA&timeframe=15Min'
             data = list(x)
             # if length data > 0
@@ -30,12 +31,13 @@ class EventBarPostToServer:
                 logging.info(f"PushToServer. Status Code: 0")
                 print(f"PushToServer Status Code: 0")
             # write content to file
-            with open('./post_to_server.txt', 'a') as f:
-                fdata = json.dumps(data)
-                f.write(datetime.now().strftime("%I:%M%p on %B %d, %Y"))
-                f.write('\n')
-                f.write(fdata)
-                f.write('\n')
+            if dest is None:
+                with open('./post_to_server.txt', 'a') as f:
+                    fdata = json.dumps(data)
+                    f.write(datetime.now().strftime("%I:%M%p on %B %d, %Y"))
+                    f.write('\n')
+                    f.write(fdata)
+                    f.write('\n')
         except Exception as e:
             logging.error(f"PushToServer. Exception: {e}")
             print(f"PushToServer. Exception: {e}")
@@ -55,9 +57,24 @@ class EventBarPostToServer:
         candidate.start()
 
 if __name__ == "__main__":
-    data = None
-    with open('./post_to_server.json', 'r') as f:
-        fdata = f.read()
-        data = json.loads(fdata)
-    app = EventBarPostToServer()
-    app.PushToServer(content=data)
+    # datestr = '05:15AM on May 17, 2022'
+    # onedate = datetime.strptime(datestr, '%I:%M%p on %B %d, %Y')
+    with open('./post_to_server_bk.txt', 'r') as f:
+        fdatalist = f.readlines()
+    lineDate = None
+    lineJsonData = None
+    for row in fdatalist:
+        if lineDate is None:
+            lineDate = row.replace('\n', '')
+        elif lineJsonData is None:
+            lineJsonData = row.replace('\n', '')
+        if lineDate is not None and lineJsonData is not None:
+            onedate = datetime.strptime(lineDate, '%I:%M%p on %B %d, %Y')
+            data = json.loads(lineJsonData)
+            if len(data) > 0:
+                app = EventBarPostToServer()
+                # app.PushToServer(content=data, date=onedate.strftime(
+                #     '%Y-%m-%dT%H:%M:%S.000Z'))
+                app.PushToServer(content=data)
+            lineDate = None
+            lineJsonData = None
