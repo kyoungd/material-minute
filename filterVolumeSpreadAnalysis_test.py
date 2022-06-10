@@ -7,6 +7,12 @@ from testUtil import TestUtil
 
 class TestFilterVolumeSpreadAnalysis(unittest.TestCase):
 
+    def executeApp(self, symbol, endDate, endHour, endMinute, timeframe):
+        isOk, df = TestUtil.getRealtimeData(
+            symbol, endDate, endHour, endMinute, timeframe)
+        app = volumeSpreadAnalysis()
+        return app.Run(symbol, df)
+    
     def testForMorningStar(self):
         data = [
             {'Open': 24.80, 'Close': 25.20},
@@ -158,3 +164,7 @@ class TestFilterVolumeSpreadAnalysis(unittest.TestCase):
         app = volumeSpreadAnalysis()
         result = app.Run('AAPL', df)
         self.assertEqual(result, 2)
+
+    def testForPriceSpike(self):
+        result = self.executeApp('PBTS', '2022-06-09', 8, 51, '1Min')
+        self.assertTrue(result)

@@ -4,12 +4,14 @@ import os
 class volumeSpreadAnalysis:
     def __init__(self):
         self.barCount: int = 4
-        self.averagingBarCount: int = 4
+        self.averagingBarCount: int = 10
         self.factor3 = 1.8
         self.factor4 = 1.8
         self.factor5 = 1.8
         self.factor8 = 1.8
         self.factor11 = 3.0
+        self.priceSpikeFactor: float = 4.0
+        self.priceSpreadFactor: float = 0.20
 
     def isCanCalculate(self, df: pd.DataFrame, period: int):
         return False if len(df) < period else True
@@ -104,6 +106,20 @@ class volumeSpreadAnalysis:
             return True
         return False
 
+    def isPriceSpike(self, df: pd.DataFrame):
+        if len(df) < self.averagingBarCount:
+            return False
+        avgSwing: float = self.avgHighLowSwing(df)
+        swing1 = df.iloc[0].High - df.iloc[0].Low        
+        swing2 = df.iloc[1].High - df.iloc[1].Low
+        index = 0 if swing1 > swing2 else 1
+        swingHl = df.iloc[index].High - df.iloc[index].Low
+        swingOc = df.iloc[index].Open - df.iloc[index].Close
+        if (swingOc / swingHl) > self.priceSpreadFactor:
+            return False
+        if swingHl < (avgSwing * self.priceSpikeFactor):
+            return False
+        return True
 
     def isVsaOk(self, df: pd.DataFrame, spreads: list, volumes: list, period: int) -> int:
         ix = 0
@@ -123,6 +139,10 @@ class volumeSpreadAnalysis:
         if abs(s2) > 3 and v2 > 2.5 and not self.isSameSign(s1, s2) and abs(s2) > abs(s1) and self.isSameSign(s2, s3) and self.isSameSign(s2, s4):
             if self.localMinMax(df, 1, 4):
                 return 2
+
+        # price spike
+        if self.isPriceSpike(df):
+            return 4
 
         #
         # if not self.isSameSign(s2, s4) and self.isSameSign(s1, s2):
@@ -145,4 +165,3 @@ class volumeSpreadAnalysis:
         else:
             return 0
 
-    

@@ -73,8 +73,8 @@ if __name__ == "__main__":
             data = json.loads(lineJsonData)
             if len(data) > 0:
                 app = EventBarPostToServer()
-                # app.PushToServer(content=data, date=onedate.strftime(
-                #     '%Y-%m-%dT%H:%M:%S.000Z'))
-                app.PushToServer(content=data)
+                app.PushToServer(content=data, date=onedate.strftime(
+                    '%Y-%m-%dT%H:%M:%S.000Z'))
+                # app.PushToServer(content=data)
             lineDate = None
             lineJsonData = None

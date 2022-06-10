@@ -14,6 +14,7 @@ from filterPivotPoint import FilterPivotPoint
 from filterKeylevels import FilterKeyLevels
 from tightMinMax import TightMinMax
 from filterTrend import FilterTrends
+from filterMacdPrice import FilterMacdPrice
 
 class EventBarDataProcess:
 
@@ -29,6 +30,7 @@ class EventBarDataProcess:
         self.pivot = FilterPivotPoint()
         self.cs = FilterCandlePattern()
         self.trend = FilterTrends()
+        self.macd = FilterMacdPrice()
 
     def Run(self, data):
         try:
@@ -58,9 +60,11 @@ class EventBarDataProcess:
                 if self.trend.Run(symbol, df, dfMinMax, isFirstMin):
                     candlestickparttern += 8
                 # 16 for Key Level trading
-                high = df.iloc[0]['High']
-                low = df.iloc[0]['Low']
-                if self.sdz.Run(symbol, df, dfMinMax=dfMinMax):
+                # high = df.iloc[0]['High']
+                # low = df.iloc[0]['Low']
+                # if self.sdz.Run(symbol, df, dfMinMax=dfMinMax):
+                #     candlestickparttern += 16
+                if self.macd.Run(symbol, df, period):
                     candlestickparttern += 16
                 self.publisher.publish({
                     'datatype': 'VSA', 

@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import requests
 import pandas as pd
 import talib
+from datetime import datetime, timedelta
 from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 
 class Util:
@@ -163,8 +164,15 @@ class Util:
 class TestUtil:
 
     @staticmethod
+    def getYesterday(endDate:str) -> str:
+        today = datetime.strptime(endDate, '%Y-%m-%d')
+        yesterday = today - timedelta(days=1)
+        return yesterday.strftime('%Y-%m-%d')
+    
+    @staticmethod
     def getRealtimeData(symbol:str, endDate:str, endHour:int, endMinute:int, timeframe:str):
-        starttime = f'{endDate}T11:30:00Z'
+        yesterday = TestUtil.getYesterday(endDate)
+        starttime = f'{yesterday}T11:30:00Z'
         ehour = '{0:02d}'.format(endHour+7)
         eminute = '{0:02d}'.format(endMinute)
         endtime = f'{endDate}T{ehour}:{eminute}:00Z'

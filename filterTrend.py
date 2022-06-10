@@ -92,7 +92,7 @@ class trendMinMax:
 class FilterTrends:
     def __init__(self):
         self.minimumReversePeaks:float = float(EnvFile.Get("FILTER_TREND_REVERSE_COUNT", '1'))
-        self.maximumReversePeaks:float = float(EnvFile.Get("FILTER_TREND_REVERSE_COUNT_MAX", '2.5'))
+        self.maximumReversePeaks:float = float(EnvFile.Get("FILTER_TREND_REVERSE_COUNT_MAX", '2.0'))
         self.minimumTrendPeaks:float = float(EnvFile.Get("FILTER_TREND_MINIMUM_PEAKS", '0.5'))
         self.marketOpenAt = TimeStamp.getMarketOpenTimestamp()
 
@@ -133,7 +133,7 @@ class FilterTrends:
         ema9 = self.getEma(df)
         if self.isEma9Verified(ema9, indexA, indexB):
             return True
-        return True
+        return False
         
     def isFirstPointMin(self, dfAllLength: int, dfMarketOpen: int, isFirstMinimum: bool)-> bool:
         if (dfAllLength - dfMarketOpen) % 2 == 0:
@@ -146,36 +146,17 @@ class FilterTrends:
             close = dfDaily['Close'][0]  # last close price
             minMax = TightMinMax()
             isFirstMinimum, df = minMax.Run(symbol) if dfMinMax is None else (isFirstMinimum, dfMinMax)  # calculate local min
-            if df is not None and (len(df.index) > 2):
-                if self.isNewTrend(df, isFirstMinimum, close):
-                    if self.isEma9Ok(df, df.iloc[0].x, df.iloc[1].x):
-                        return True
-                    return True
-                dataf = df[df['Date'] >= self.marketOpenAt]
-                firstMin = self.isFirstPointMin(len(df.index), len(dataf.index), isFirstMinimum)
-                if len(dataf.index) > 2 and self.isNewTrend(dataf, firstMin, close):
-                    if self.isEma9Ok(df, df.iloc[0].index, df.iloc[1].index):
-                        return True
+            if df is None:
                 return False
-                # trend = trendMinMax(df, isFirstMinimum, close)
-                # trendPeaks, reversePeaks = trend.Run()
-                # if trendPeaks < self.minimumTrendPeaks:
-                #     return False
-                # newPeaks = trendPeaks if reversePeaks <= 0 else reversePeaks
-                # if newPeaks > self.maximumReversePeaks:
-                #     return False
-                # if newPeaks < self.minimumReversePeaks:
-                #     return False
-                # return True
-                # 
-                # self.sa.UpdateFilter(
-                #     self.jsonData, symbol, 'trend', trendPeaks)
-                # self.sa.UpdateFilter(
-                #     self.jsonData, symbol, 'reverse', reversePeaks)
+            if not self.isNewTrend(df, isFirstMinimum, close):
+                return False
+            if not self.isEma9Ok(df, df.iloc[0].x, df.iloc[1].x):
+                return False
+            return True
         except Exception as e:
             logging.error(f'FilterTrends.Run: {symbol} {e}')
             print(e)
-        return False
+            return False
 
     def RunNew(self, symbol:str, dfDaily:pd.DataFrame, dfMinMax:pd.DataFrame = None, isFirstMinimum: bool = None) -> bool:
         try:
