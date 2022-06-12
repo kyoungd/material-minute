@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from util import TestUtil
+from testUtil import TestUtil
 from filterKeylevels import FilterKeyLevels
 from alpacaHistorical import TimePeriod
 
@@ -11,7 +11,7 @@ class TestFilterKeyLevelsRealData(unittest.TestCase):
         isOk, df = TestUtil.getRealtimeData(
             symbol, endDate, endHour, endMinute, timeframe)
         sd = FilterKeyLevels()
-        return sd.Run(symbol, df, keylevels)
+        return sd.Run(symbol, df, None, keylevels)
 
     def testKeyLevelsReal_01(self):
         keylevels = [

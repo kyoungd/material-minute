@@ -1,10 +1,9 @@
 import unittest
 import pandas as pd
 from filterMacdPrice import FilterMacdPrice
-from testUtil import TestUtil
 from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 from alpacaHistorical import TimePeriod
-from util import TestUtil
+from testUtil import TestUtil
 
 
 class TestFilterMacdPrice(unittest.TestCase):

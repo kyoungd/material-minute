@@ -100,8 +100,8 @@ class volumeSpreadAnalysis:
         return 0
 
     def localMinMax(self, df: pd.DataFrame, index: int, barCount=None):
-        iMax = df['Close'].idxmax()
-        iMin = df['Close'].idxmin()
+        iMax = df['High'].idxmax()
+        iMin = df['Low'].idxmin()
         if iMax == index or iMin == index:
             return True
         return False
@@ -132,12 +132,13 @@ class volumeSpreadAnalysis:
         v3 = volumes[ix+2]
         v4 = volumes[ix+3]
         # down thrust
-        if abs(s2) < 0.3 and v2 > 2.5 and not self.isSameSign(s1, s2) and self.isSameSignal(s2, s3) and self.isSameSignal(s2, s4):
-            if self.localMinMax(df, 1, 4):
+        if abs(s2) < 0.25 and v2 > 2:
+            if self.localMinMax(df, 1, 8):
                 return 1
+
         # selling climax
         if abs(s2) > 3 and v2 > 2.5 and not self.isSameSign(s1, s2) and abs(s2) > abs(s1) and self.isSameSign(s2, s3) and self.isSameSign(s2, s4):
-            if self.localMinMax(df, 1, 4):
+            if self.localMinMax(df, 1, 8):
                 return 2
 
         # price spike

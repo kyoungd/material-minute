@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from util import TestUtil
+from testUtil import TestUtil
 from filterTrend import FilterTrends
 from alpacaHistorical import TimePeriod
 from tightMinMax import TightMinMax

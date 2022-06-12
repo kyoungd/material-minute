@@ -83,7 +83,7 @@ class TestFilterVolumeSpreadAnalysis(unittest.TestCase):
         result = app.Run('AAPL', df)
         self.assertEqual(result, 11)
         
-    def testForDownwardThrust(self):
+    def testUpDownThrust_01(self):
         data = [
             {'Spread': 0.5, 'Volume': 1},
             {'Spread': -0.02, 'Volume': 5},
@@ -166,5 +166,9 @@ class TestFilterVolumeSpreadAnalysis(unittest.TestCase):
         self.assertEqual(result, 2)
 
     def testForPriceSpike(self):
-        result = self.executeApp('PBTS', '2022-06-09', 8, 51, '1Min')
+        result = self.executeApp('PBTS', '2022-06-09', 8, 34, '1Min')
         self.assertTrue(result)
+
+    def testUpDownThrust_02(self):
+        result = self.executeApp('AFRM', '2002-05-17', 6, 44, '2Min')
+        self.assertEqual(result, 1)

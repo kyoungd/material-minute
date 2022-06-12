@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 import pandas as pd
+from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 
 class TestPublisher:
     def __init__(self, callback):
@@ -72,3 +73,19 @@ class TestUtil:
             datagrid.append(item)
         df = pd.DataFrame(datagrid)
         return df
+
+    @staticmethod
+    def getYesterday(endDate:str) -> str:
+        today = datetime.strptime(endDate, '%Y-%m-%d')
+        yesterday = today - timedelta(days=1)
+        return yesterday.strftime('%Y-%m-%d')
+    
+    @staticmethod
+    def getRealtimeData(symbol:str, endDate:str, endHour:int, endMinute:int, timeframe:str):
+        yesterday = TestUtil.getYesterday(endDate)
+        starttime = f'{yesterday}T11:30:00Z'
+        ehour = '{0:02d}'.format(endHour+7)
+        eminute = '{0:02d}'.format(endMinute)
+        endtime = f'{endDate}T{ehour}:{eminute}:00Z'
+        app = AlpacaHistoricalBarData(symbol, starttime, endtime, timeframe)
+        return app.GetDataFrame()

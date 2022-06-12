@@ -2,10 +2,9 @@ from datetime import datetime, timedelta
 import unittest
 import pandas as pd
 from filterPivotPoint import FilterPivotPoint
-from testUtil import TestUtil
 from utilAlpacaHistoricalBarData import AlpacaHistoricalBarData
 from alpacaHistorical import TimePeriod
-from util import TestUtil
+from testUtil import TestUtil
 
 class TestFilterPivotPoint(unittest.TestCase):
     def setUp(self):

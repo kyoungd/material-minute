@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from util import TestUtil
+from testUtil import TestUtil
 from filterSupplyDemandZone import FilterDailySupplyDemandZone
 from alpacaHistorical import TimePeriod
 

@@ -19254,3 +19254,433 @@
 []
 12:26PM on June 10, 2022
 [{"datatype": "VSA", "symbol": "COGT", "timeframe": "2Min", "vsa": 0, "cs": 8, "price": 8.11}]
+12:28PM on June 10, 2022
+[]
+12:28PM on June 10, 2022
+[]
+12:28PM on June 10, 2022
+[]
+12:28PM on June 10, 2022
+[]
+12:28PM on June 10, 2022
+[]
+12:28PM on June 10, 2022
+[]
+12:30PM on June 10, 2022
+[]
+12:30PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "HUSA", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 7.0786}]
+12:30PM on June 10, 2022
+[]
+12:30PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "ALT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.5}, {"datatype": "VSA", "symbol": "ALT", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 8.515}]
+12:30PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "SFIX", "timeframe": "15Min", "vsa": 0, "cs": 12, "price": 6.355}]
+12:31PM on June 10, 2022
+[]
+12:32PM on June 10, 2022
+[]
+12:32PM on June 10, 2022
+[]
+12:32PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "MICS", "timeframe": "2Min", "vsa": 0, "cs": 8, "price": 7.21}]
+12:32PM on June 10, 2022
+[]
+12:34PM on June 10, 2022
+[]
+12:34PM on June 10, 2022
+[]
+12:34PM on June 10, 2022
+[]
+12:34PM on June 10, 2022
+[]
+12:35PM on June 10, 2022
+[]
+12:35PM on June 10, 2022
+[]
+12:35PM on June 10, 2022
+[]
+12:35PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "ALT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.53}, {"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 13.1376}]
+12:36PM on June 10, 2022
+[]
+12:36PM on June 10, 2022
+[]
+12:36PM on June 10, 2022
+[]
+12:36PM on June 10, 2022
+[]
+12:37PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "COGT", "timeframe": "2Min", "vsa": 0, "cs": 12, "price": 8.13}]
+12:38PM on June 10, 2022
+[]
+12:38PM on June 10, 2022
+[]
+12:38PM on June 10, 2022
+[]
+12:39PM on June 10, 2022
+[]
+12:40PM on June 10, 2022
+[]
+12:40PM on June 10, 2022
+[]
+12:40PM on June 10, 2022
+[]
+12:40PM on June 10, 2022
+[]
+12:40PM on June 10, 2022
+[]
+12:40PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "COGT", "timeframe": "2Min", "vsa": 0, "cs": 8, "price": 8.2162}]
+12:40PM on June 10, 2022
+[]
+12:40PM on June 10, 2022
+[]
+12:41PM on June 10, 2022
+[]
+12:42PM on June 10, 2022
+[]
+12:42PM on June 10, 2022
+[]
+12:42PM on June 10, 2022
+[]
+12:42PM on June 10, 2022
+[]
+12:42PM on June 10, 2022
+[]
+12:42PM on June 10, 2022
+[]
+12:44PM on June 10, 2022
+[]
+12:44PM on June 10, 2022
+[]
+12:44PM on June 10, 2022
+[]
+12:44PM on June 10, 2022
+[]
+12:44PM on June 10, 2022
+[]
+12:44PM on June 10, 2022
+[]
+12:45PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 13.03}, {"datatype": "VSA", "symbol": "HCP", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 30.03}]
+12:45PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "FRSH", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 12.345}, {"datatype": "VSA", "symbol": "FRSH", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 12.335}, {"datatype": "VSA", "symbol": "ALT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.56}, {"datatype": "VSA", "symbol": "SFIX", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 6.39}]
+12:46PM on June 10, 2022
+[]
+12:46PM on June 10, 2022
+[]
+12:46PM on June 10, 2022
+[]
+12:47PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:48PM on June 10, 2022
+[]
+12:50PM on June 10, 2022
+[]
+12:50PM on June 10, 2022
+[]
+12:50PM on June 10, 2022
+[]
+12:50PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "RIOT", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 5.175}]
+12:50PM on June 10, 2022
+[]
+12:51PM on June 10, 2022
+[]
+12:52PM on June 10, 2022
+[]
+12:52PM on June 10, 2022
+[]
+12:52PM on June 10, 2022
+[]
+12:52PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:54PM on June 10, 2022
+[]
+12:55PM on June 10, 2022
+[]
+12:55PM on June 10, 2022
+[]
+12:55PM on June 10, 2022
+[]
+12:55PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "RDBX", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 12.9499}]
+12:56PM on June 10, 2022
+[]
+12:56PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "COGT", "timeframe": "2Min", "vsa": 0, "cs": 4, "price": 7.94}]
+12:56PM on June 10, 2022
+[]
+12:56PM on June 10, 2022
+[]
+12:56PM on June 10, 2022
+[]
+12:56PM on June 10, 2022
+[]
+12:57PM on June 10, 2022
+[]
+12:58PM on June 10, 2022
+[]
+12:58PM on June 10, 2022
+[]
+12:58PM on June 10, 2022
+[]
+12:58PM on June 10, 2022
+[]
+12:58PM on June 10, 2022
+[]
+12:58PM on June 10, 2022
+[]
+12:59PM on June 10, 2022
+[]
+01:00PM on June 10, 2022
+[]
+01:00PM on June 10, 2022
+[]
+01:00PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "HUSA", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 6.9801}]
+01:00PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "ALT", "timeframe": "5Min", "vsa": 0, "cs": 4, "price": 8.55}, {"datatype": "VSA", "symbol": "ALT", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 8.58}]
+01:00PM on June 10, 2022
+[]
+01:01PM on June 10, 2022
+[]
+01:02PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "COGT", "timeframe": "2Min", "vsa": 0, "cs": 4, "price": 7.91}]
+01:04PM on June 10, 2022
+[]
+01:04PM on June 10, 2022
+[]
+01:05PM on June 10, 2022
+[]
+01:06PM on June 10, 2022
+[]
+01:06PM on June 10, 2022
+[]
+01:10PM on June 10, 2022
+[]
+01:10PM on June 10, 2022
+[]
+01:15PM on June 10, 2022
+[]
+01:16PM on June 10, 2022
+[]
+01:20PM on June 10, 2022
+[]
+01:24PM on June 10, 2022
+[]
+01:25PM on June 10, 2022
+[]
+01:26PM on June 10, 2022
+[]
+01:28PM on June 10, 2022
+[]
+01:30PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 5.18}]
+01:32PM on June 10, 2022
+[]
+01:34PM on June 10, 2022
+[]
+01:35PM on June 10, 2022
+[]
+01:36PM on June 10, 2022
+[]
+01:38PM on June 10, 2022
+[]
+01:40PM on June 10, 2022
+[]
+01:42PM on June 10, 2022
+[]
+01:44PM on June 10, 2022
+[]
+01:45PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "SFIX", "timeframe": "15Min", "vsa": 0, "cs": 4, "price": 6.39}]
+01:46PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "2Min", "vsa": 0, "cs": 4, "price": 5.33}]
+01:48PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "2Min", "vsa": 0, "cs": 4, "price": 5.41}]
+01:50PM on June 10, 2022
+[]
+01:52PM on June 10, 2022
+[]
+01:54PM on June 10, 2022
+[]
+01:55PM on June 10, 2022
+[]
+01:56PM on June 10, 2022
+[]
+01:58PM on June 10, 2022
+[]
+02:00PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "FRSH", "timeframe": "15Min", "vsa": 0, "cs": 8, "price": 12.4}]
+02:02PM on June 10, 2022
+[]
+02:04PM on June 10, 2022
+[]
+02:05PM on June 10, 2022
+[]
+02:06PM on June 10, 2022
+[]
+02:08PM on June 10, 2022
+[]
+02:10PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "2Min", "vsa": 0, "cs": 20, "price": 6.0}]
+02:12PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "2Min", "vsa": 0, "cs": 20, "price": 6.2}]
+02:14PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "2Min", "vsa": 0, "cs": 8, "price": 6.01}]
+02:15PM on June 10, 2022
+[]
+02:16PM on June 10, 2022
+[]
+02:18PM on June 10, 2022
+[]
+02:20PM on June 10, 2022
+[]
+02:22PM on June 10, 2022
+[]
+02:24PM on June 10, 2022
+[]
+02:25PM on June 10, 2022
+[]
+02:28PM on June 10, 2022
+[]
+02:30PM on June 10, 2022
+[]
+02:35PM on June 10, 2022
+[]
+02:36PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "2Min", "vsa": 0, "cs": 12, "price": 6.15}]
+02:38PM on June 10, 2022
+[]
+02:40PM on June 10, 2022
+[]
+02:42PM on June 10, 2022
+[]
+02:44PM on June 10, 2022
+[]
+02:45PM on June 10, 2022
+[]
+02:46PM on June 10, 2022
+[]
+02:48PM on June 10, 2022
+[]
+02:50PM on June 10, 2022
+[]
+02:55PM on June 10, 2022
+[]
+03:00PM on June 10, 2022
+[]
+03:02PM on June 10, 2022
+[]
+03:04PM on June 10, 2022
+[]
+03:05PM on June 10, 2022
+[]
+03:06PM on June 10, 2022
+[]
+03:08PM on June 10, 2022
+[]
+03:10PM on June 10, 2022
+[]
+03:12PM on June 10, 2022
+[]
+03:15PM on June 10, 2022
+[]
+03:18PM on June 10, 2022
+[]
+03:20PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.83}]
+03:22PM on June 10, 2022
+[]
+03:24PM on June 10, 2022
+[]
+03:25PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "5Min", "vsa": 0, "cs": 16, "price": 6.98}]
+03:26PM on June 10, 2022
+[]
+03:28PM on June 10, 2022
+[]
+03:30PM on June 10, 2022
+[]
+03:32PM on June 10, 2022
+[]
+03:34PM on June 10, 2022
+[]
+03:35PM on June 10, 2022
+[]
+03:36PM on June 10, 2022
+[]
+03:38PM on June 10, 2022
+[]
+03:40PM on June 10, 2022
+[]
+03:42PM on June 10, 2022
+[]
+03:45PM on June 10, 2022
+[]
+03:50PM on June 10, 2022
+[]
+03:52PM on June 10, 2022
+[]
+03:54PM on June 10, 2022
+[]
+03:55PM on June 10, 2022
+[]
+04:00PM on June 10, 2022
+[]
+04:02PM on June 10, 2022
+[]
+04:05PM on June 10, 2022
+[]
+04:10PM on June 10, 2022
+[]
+04:15PM on June 10, 2022
+[]
+04:16PM on June 10, 2022
+[]
+04:20PM on June 10, 2022
+[]
+04:25PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 6.92}]
+04:30PM on June 10, 2022
+[]
+04:35PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "5Min", "vsa": 0, "cs": 8, "price": 7.06}]
+04:45PM on June 10, 2022
+[]
+04:50PM on June 10, 2022
+[]
+04:58PM on June 10, 2022
+[{"datatype": "VSA", "symbol": "BLUE", "timeframe": "2Min", "vsa": 0, "cs": 8, "price": 6.93}]
+05:00PM on June 10, 2022
+[]

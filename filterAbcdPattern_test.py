@@ -1,9 +1,8 @@
 import unittest
 import pandas as pd
 from filterAbcdPattern import FilterAbcdPattern
-from testUtil import TestUtil
 from alpacaHistorical import TimePeriod
-from util import TestUtil
+from testUtil import TestUtil
 
 
 class TestFilterAbcdRealData(unittest.TestCase):
@@ -12,7 +11,7 @@ class TestFilterAbcdRealData(unittest.TestCase):
         isOk, df = TestUtil.getRealtimeData(
             symbol, endDate, endHour, endMinute, timeframe)
         abcd = FilterAbcdPattern()
-        return abcd.Run(symbol, df, 0)
+        return abcd.Run(symbol, df, None)
 
     def testAbcdRealData_01(self):
         result = self.executeApp('WBD', '2022-04-29',
@@ -48,10 +47,5 @@ class TestFilterAbcdRealData(unittest.TestCase):
     def testAbcdRealData_07(self):
         result = self.executeApp('AFRM', '2022-05-17',
                                  8, 0, TimePeriod.Min5.value)
-        self.assertTrue(result)
-        
-    def testAbcdRealData_08(self):
-        result = self.executeApp('AFRM', '2022-05-17',
-                                 6, 59, TimePeriod.Min15.value)
         self.assertTrue(result)
         
